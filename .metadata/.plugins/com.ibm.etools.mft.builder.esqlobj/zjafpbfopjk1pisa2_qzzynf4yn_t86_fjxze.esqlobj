@@ -1,0 +1,11 @@
+CREATE COMPUTE MODULE lab9_Compute
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot.XMLNSC.outformat.id = InputRoot.XMLNSC.informat.code; 
+		SET OutputRoot.XMLNSC.outformat.desc = InputRoot.XMLNSC.informat.text;
+		
+		RETURN TRUE;
+	END;
+
+	
+END MODULE;

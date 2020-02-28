@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><MRMessageSet id="NUV4DUS002001" name="SOAPNodesSampleMessageSet" parser="SOAP">
+  <MRMsgCollection href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/org/xmlsoap/schemas/soap/envelope/soapenv11.mxsd" prefix="soapenv" targetNamespace="http://schemas.xmlsoap.org/soap/envelope/">
+    <message href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/org/xmlsoap/schemas/soap/envelope/soapenv11.mxsd#/0/Envelope;XSDElementDeclaration$MRMessage" name="Envelope">
+      <xwf idAttrName="id" idAttrNameNSURI="" idAttrValue="Envelope" messageSetDefaultRep="XML1" render="XMLElement" xmlName="Envelope"/>
+    </message>
+    <message href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/org/xmlsoap/schemas/soap/envelope/soapenv11.mxsd#/0/Fault;XSDElementDeclaration=3$MRMessage" name="Fault">
+      <xwf idAttrName="id" idAttrNameNSURI="" idAttrValue="Fault" messageSetDefaultRep="XML1" render="XMLElement" xmlName="Fault"/>
+    </message>
+    <element href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/org/xmlsoap/schemas/soap/envelope/soapenv11.mxsd#/0/Envelope;XSDElementDeclaration" name="Envelope" type="mset://SOAPNodesSampleMessageSet#/-/complexType{http://schemas.xmlsoap.org/soap/envelope/}Envelope">
+      <xwf messageSetDefaultRep="XML1" xmlName="Envelope"/>
+    </element>
+    <element href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/org/xmlsoap/schemas/soap/envelope/soapenv11.mxsd#/0/Header;XSDElementDeclaration=1" name="Header" type="mset://SOAPNodesSampleMessageSet#/-/complexType{http://schemas.xmlsoap.org/soap/envelope/}Header">
+      <xwf messageSetDefaultRep="XML1" xmlName="Header"/>
+    </element>
+    <element href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/org/xmlsoap/schemas/soap/envelope/soapenv11.mxsd#/0/Body;XSDElementDeclaration=2" name="Body" type="mset://SOAPNodesSampleMessageSet#/-/complexType{http://schemas.xmlsoap.org/soap/envelope/}Body">
+      <xwf messageSetDefaultRep="XML1" xmlName="Body"/>
+    </element>
+    <element href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/org/xmlsoap/schemas/soap/envelope/soapenv11.mxsd#/0/Fault;XSDElementDeclaration=3" name="Fault" type="mset://SOAPNodesSampleMessageSet#/-/complexType{http://schemas.xmlsoap.org/soap/envelope/}Fault">
+      <xwf messageSetDefaultRep="XML1" xmlName="Fault"/>
+    </element>
+    <complexType baseType="mset://SOAPNodesSampleMessageSet#/-/complexType{http://www.w3.org/2001/XMLSchema}anyType" href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/org/xmlsoap/schemas/soap/envelope/soapenv11.mxsd#/0/Envelope;XSDComplexTypeDefinition" name="Envelope"/>
+    <complexType baseType="mset://SOAPNodesSampleMessageSet#/-/complexType{http://www.w3.org/2001/XMLSchema}anyType" href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/org/xmlsoap/schemas/soap/envelope/soapenv11.mxsd#/0/Header;XSDComplexTypeDefinition=1" name="Header"/>
+    <complexType baseType="mset://SOAPNodesSampleMessageSet#/-/complexType{http://www.w3.org/2001/XMLSchema}anyType" href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/org/xmlsoap/schemas/soap/envelope/soapenv11.mxsd#/0/Body;XSDComplexTypeDefinition=2" name="Body"/>
+    <complexType baseType="mset://SOAPNodesSampleMessageSet#/-/complexType{http://www.w3.org/2001/XMLSchema}anyType" href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/org/xmlsoap/schemas/soap/envelope/soapenv11.mxsd#/0/Fault;XSDComplexTypeDefinition=3" name="Fault"/>
+    <complexType baseType="mset://SOAPNodesSampleMessageSet#/-/complexType{http://www.w3.org/2001/XMLSchema}anyType" href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/org/xmlsoap/schemas/soap/envelope/soapenv11.mxsd#/0/detail;XSDComplexTypeDefinition=4" name="detail"/>
+    <attribute href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/org/xmlsoap/schemas/soap/envelope/soapenv11.mxsd#/0/mustUnderstand;XSDAttributeDeclaration" name="mustUnderstand">
+      <xwf messageSetDefaultRep="XML1" xmlName="mustUnderstand"/>
+    </attribute>
+    <attribute href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/org/xmlsoap/schemas/soap/envelope/soapenv11.mxsd#/0/actor;XSDAttributeDeclaration=1" name="actor">
+      <xwf messageSetDefaultRep="XML1" xmlName="actor"/>
+    </attribute>
+    <attribute href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/org/xmlsoap/schemas/soap/envelope/soapenv11.mxsd#/0/encodingStyle;XSDAttributeDeclaration=2" name="encodingStyle">
+      <xwf messageSetDefaultRep="XML1" xmlName="encodingStyle"/>
+    </attribute>
+    <attributeGroup href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/org/xmlsoap/schemas/soap/envelope/soapenv11.mxsd#/0/encodingStyle;XSDAttributeGroupDefinition" name="encodingStyle"/>
+  </MRMsgCollection>
+  <MRMsgCollection href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/com/acmeorders/www/orderservice/OrderService_InlineSchema1.mxsd" prefix="oldtns1" targetNamespace="http://www.acmeOrders.com/OrderService">
+    <message href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/com/acmeorders/www/orderservice/OrderService_InlineSchema1.mxsd#/0/submitPOResponse;XSDElementDeclaration$MRMessage" name="submitPOResponse">
+      <xwf idAttrName="id" idAttrNameNSURI="" idAttrValue="submitPOResponse" messageSetDefaultRep="XML1" render="XMLElement" xmlName="submitPOResponse"/>
+    </message>
+    <message href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/com/acmeorders/www/orderservice/OrderService_InlineSchema1.mxsd#/0/submitPORequest;XSDElementDeclaration=1$MRMessage" name="submitPORequest">
+      <xwf idAttrName="id" idAttrNameNSURI="" idAttrValue="submitPORequest" messageSetDefaultRep="XML1" render="XMLElement" xmlName="submitPORequest"/>
+    </message>
+    <element href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/com/acmeorders/www/orderservice/OrderService_InlineSchema1.mxsd#/0/submitPOResponse;XSDElementDeclaration" name="submitPOResponse">
+      <xwf messageSetDefaultRep="XML1" xmlName="submitPOResponse"/>
+    </element>
+    <element href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/com/acmeorders/www/orderservice/OrderService_InlineSchema1.mxsd#/0/submitPORequest;XSDElementDeclaration=1" name="submitPORequest">
+      <xwf messageSetDefaultRep="XML1" xmlName="submitPORequest"/>
+    </element>
+  </MRMsgCollection>
+  <MRMsgCollection href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/soap.mxsd" prefix="" targetNamespace="">
+    <message href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/soap.mxsd#/0/SOAP_Domain_Msg;XSDElementDeclaration$MRMessage" name="SOAP_Domain_Msg">
+      <xwf idAttrName="id" idAttrNameNSURI="" idAttrValue="SOAP_Domain_Msg" messageSetDefaultRep="XML1" render="XMLElement" xmlName="SOAP_Domain_Msg"/>
+    </message>
+    <element href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/soap.mxsd#/0/SOAP_Domain_Msg;XSDElementDeclaration" name="SOAP_Domain_Msg" type="mset://SOAPNodesSampleMessageSet#/-/complexType{}SOAP_Msg_type">
+      <xwf messageSetDefaultRep="XML1" xmlName="SOAP_Domain_Msg"/>
+    </element>
+    <complexType baseType="mset://SOAPNodesSampleMessageSet#/-/complexType{http://www.w3.org/2001/XMLSchema}anyType" href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/soap.mxsd#/0/MIME_Headers_type;XSDComplexTypeDefinition" name="MIME_Headers_type"/>
+    <complexType baseType="mset://SOAPNodesSampleMessageSet#/-/complexType{http://www.w3.org/2001/XMLSchema}anyType" href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/soap.mxsd#/0/Attachment_type;XSDComplexTypeDefinition=1" name="Attachment_type"/>
+    <complexType baseType="mset://SOAPNodesSampleMessageSet#/-/complexType{http://www.w3.org/2001/XMLSchema}anyType" href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/soap.mxsd#/0/SOAP_Msg_type;XSDComplexTypeDefinition=2" name="SOAP_Msg_type"/>
+    <group href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/soap.mxsd#/0/MIME_header_fields;XSDModelGroupDefinition" name="MIME_header_fields"/>
+  </MRMsgCollection>
+  <MRMsgCollection href="platform:/resource/SOAPNodesSampleMessageSet/SOAPNodesSampleMessageSet/com/acmeorders/www/orderservice/OrderService.mxsd" prefix="tns" targetNamespace="http://www.acmeOrders.com/OrderService">
+    <include name="SOAPNodesSampleMessageSet/com/acmeorders/www/orderservice/OrderService_InlineSchema1.mxsd" targetNamespace="http://www.acmeOrders.com/OrderService"/>
+    <import name="SOAPNodesSampleMessageSet/org/xmlsoap/schemas/soap/envelope/soapenv11.mxsd" targetNamespace="http://schemas.xmlsoap.org/soap/envelope/"/>
+  </MRMsgCollection>
+</MRMessageSet>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><MessageBroker name="secondApp">
+  <XSDCollection href="platform:/resource/secondApp/userlist.xsd" prefix="" targetNamespace="">
+    <element href="platform:/resource/secondApp/userlist.xsd#//id;XSDElementDeclaration" name="id" type="mlib://secondApp#/-/simpleType{http://www.w3.org/2001/XMLSchema}string"/>
+    <element href="platform:/resource/secondApp/userlist.xsd#//userlist;XSDElementDeclaration=1" name="userlist"/>
+    <element href="platform:/resource/secondApp/userlist.xsd#//email;XSDElementDeclaration=2" name="email" type="mlib://secondApp#/-/simpleType{http://www.w3.org/2001/XMLSchema}string"/>
+    <element href="platform:/resource/secondApp/userlist.xsd#//lastname;XSDElementDeclaration=3" name="lastname" type="mlib://secondApp#/-/simpleType{http://www.w3.org/2001/XMLSchema}string"/>
+    <element href="platform:/resource/secondApp/userlist.xsd#//firstname;XSDElementDeclaration=4" name="firstname" type="mlib://secondApp#/-/simpleType{http://www.w3.org/2001/XMLSchema}string"/>
+    <element href="platform:/resource/secondApp/userlist.xsd#//user;XSDElementDeclaration=5" name="user"/>
+  </XSDCollection>
+  <XSDCollection href="platform:/resource/secondApp/IBMdefined/CommaSeparatedFormat.xsd" prefix="tns" targetNamespace="http://www.ibm.com/dfdl/CommaSeparatedFormat"/>
+  <XSDCollection href="platform:/resource/secondApp/DFDLschema/userlistDFDL.xsd" prefix="" targetNamespace="">
+    <import name="IBMdefined/CommaSeparatedFormat.xsd" targetNamespace="http://www.ibm.com/dfdl/CommaSeparatedFormat"/>
+    <element href="platform:/resource/secondApp/DFDLschema/userlistDFDL.xsd#//userlistDFDL;XSDElementDeclaration" name="userlistDFDL"/>
+  </XSDCollection>
+</MessageBroker>

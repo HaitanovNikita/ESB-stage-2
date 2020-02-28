@@ -1,0 +1,19 @@
+CREATE COMPUTE MODULE lab11_Compute CREATE FUNCTION Main() RETURNS BOOLEAN BEGIN
+CALL SelectFromDB(); CALL PropagateMessages(); CALL PropagateResults(); RETURN TRUE;
+END;
+CREATE PROCEDURE SelectFromDB() BEGIN
+SET Environment.DBSELECT.row[] = SELECT * FROM Database.ESB.EMAIL_LIST; END;
+CREATE PROCEDURE PropagateMessages() BEGIN DECLARE I INTEGER 1;
+DECLARE J INTEGER;
+SET J = CARDINALITY(Environment.DBSELECT.*[]); WHILE I <= J DO
+SET OutputRoot.XMLNSC.emaillist.id = Environment.DBSELECT.row[I].ID;
+SET OutputRoot.XMLNSC.emaillist.name = Environment.DBSELECT.row[I].NAME; SET OutputRoot.XMLNSC.emaillist.surname =
+Environment.DBSELECT.row[I].SURNAME;
+SET OutputRoot.XMLNSC.emaillist.email = Environment.DBSELECT.row[I].EMAIL; PROPAGATE TO TERMINAL 'out2';
+SET I = I + 1; END WHILE;
+SET Environment.DBSELECT.result = J; END;
+CREATE PROCEDURE PropagateResults() BEGIN
+SET OutputRoot.XMLNSC.result.number = Environment.DBSELECT.result; SET OutputRoot.XMLNSC.result.description = 'We just sent ' ||
+CAST(Environment.DBSELECT.result AS CHARACTER) || ' messages to MQ'; PROPAGATE TO TERMINAL 'out1';
+END;
+END MODULE;

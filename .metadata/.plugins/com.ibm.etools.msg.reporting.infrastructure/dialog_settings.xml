@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ReportPageSettings">
+		<item value="1" key="NumberOfReportHistory"/>
+		<item value="nhaitanov" key="AuthorName"/>
+		<item value="Lab 9. Instruction to ESQL" key="ReportTitle"/>
+		<item value="C:\Users\nhaitanov\IBM\IIBT10\workspace\reportFile.pdf" key="HistoryReport_0"/>
+	</section>
+	<section name="LayoutPageSettings">
+		<item value="2" key="sourceCodeTextFontSizeIndex"/>
+		<item value="0" key="headerTextFontIndex"/>
+		<item value="0" key="chapterTitleFontIndex"/>
+		<item value="0" key="plainTextFontStyleIndex"/>
+		<item value="1" key="sourceCodeTextFontIndex"/>
+		<item value="7" key="TOCLevelIndex"/>
+		<item value="0" key="plainTextFontIndex"/>
+		<item value="5" key="pageSizeIndex"/>
+		<item value="5" key="chapterTitleFontSizeIndex"/>
+		<item value="0" key="LayoutSettingsActive"/>
+		<item value="2" key="captionTextFontSizeIndex"/>
+		<item value="0" key="definitionTextFontStyleIndex"/>
+		<item value="2" key="plainTextFontSizeIndex"/>
+		<item value="2" key="definitionTextFontSizeIndex"/>
+		<item value="0" key="definitionTextFontIndex"/>
+		<item value="0" key="tocTextFontStyleIndex"/>
+		<item value="0" key="sourceCodeTextFontStyleIndex"/>
+		<item value="1" key="tocTextFontSizeIndex"/>
+		<item value="1" key="orientation"/>
+		<item value="0" key="tocTextFontIndex"/>
+		<item value="3" key="headerTextFontSizeIndex"/>
+		<item value="2" key="chapterTitleFontStyleIndex"/>
+		<item value="2" key="headerTextFontStyleIndex"/>
+		<item value="0" key="captionTextFontIndex"/>
+		<item value="2" key="captionTextFontStyleIndex"/>
+	</section>
+</section>

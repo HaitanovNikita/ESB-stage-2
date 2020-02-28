@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="com.ibm.etools.msg.wsdl.ui.internal.commonselection.DataTypeSelectionDialog">
+		<item value="583" key="height"/>
+		<item value="389" key="width"/>
+		<item value="0" key="y"/>
+		<item value="489" key="x"/>
+	</section>
+</section>

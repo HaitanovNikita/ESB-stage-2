@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><mappingRoot xmlns="http://www.ibm.com/2008/ccl/Mapping" domainID="com.ibm.msl.mapping.xml" domainIDExtension="mb" mainMap="true" targetNamespace="gen" version="8.0.5.0" xmlns:map="gen">
+    <input path="/EmployeeService_InlineSchema1.xsd" var="var"/>
+    <input path="db:database(/orcl.dbm,orcl,db:schema-tables(SYS,msl:db-name('USER$')))" var="orcl"/>
+    <input path="jar:file://!com/ibm/msl/mapping/rdb/xsds/dbexception.xsd" var="var1"/>
+    <output path="/EmployeeService_InlineSchema1.xsd"/>
+    <namespaces>
+        <namespace kind="supplement" prefix="io2" uri="http://EmployeeService"/>
+        <namespace kind="supplement" prefix="io" uri="http://training.ibm.com/Employee"/>
+    </namespaces>
+    <generation engine="xquery"/>
+    <mappingDeclaration name="getEmployee_Request_Response_Mapping">
+        <input namespace="http://EmployeeService" path="$var/mb:msg(getEmployee,assembly,XMLNSC,Properties)" var="ComIbmMessageAssembly_getEmployee"/>
+        <input path="$orcl/db:select(fn:false(),ResultSet(SYS/msl:db-name('USER$')/msl:db-name('USER#'),SYS/msl:db-name('USER$')/NAME,SYS/msl:db-name('USER$')/msl:db-name('TYPE#'),SYS/msl:db-name('USER$')/PASSWORD,SYS/msl:db-name('USER$')/msl:db-name('DATATS#'),SYS/msl:db-name('USER$')/msl:db-name('TEMPTS#'),SYS/msl:db-name('USER$')/CTIME),db:where('SYS.&quot;USER$&quot;.&quot;USER#&quot; ?','?'=$ComIbmMessageAssembly_getEmployee/io2:getEmployee/Employee/io:EmpNo))" var="dbselect"/>
+        <output namespace="http://EmployeeService" path="mb:msg(getEmployeeResponse,assembly,XMLNSC,Properties)" var="ComIbmMessageAssembly_getEmployeeResponse"/>
+        <move>
+            <input path="$ComIbmMessageAssembly_getEmployee/Properties"/>
+            <output path="$ComIbmMessageAssembly_getEmployeeResponse/Properties"/>
+        </move>
+        <select ref="dbselect">
+            <input path="$dbselect/ResultSet"/>
+            <output path="$ComIbmMessageAssembly_getEmployeeResponse/getEmployeeResponse"/>
+            <move>
+                <input path="SYS/msl:db-name('USER$')/msl:db-name('USER#')"/>
+                <output path="output1/GivenName"/>
+            </move>
+            <move>
+                <input path="SYS/msl:db-name('USER$')/NAME"/>
+                <output path="output1/FamilyName"/>
+            </move>
+            <move>
+                <input path="SYS/msl:db-name('USER$')/msl:db-name('TYPE#')"/>
+                <output path="output1/EmpNo"/>
+            </move>
+            <move>
+                <input path="SYS/msl:db-name('USER$')/PASSWORD"/>
+                <output path="output1/Department"/>
+            </move>
+            <move>
+                <input path="SYS/msl:db-name('USER$')/msl:db-name('DATATS#')"/>
+                <output path="output1/HireDate"/>
+            </move>
+            <move>
+                <input path="SYS/msl:db-name('USER$')/msl:db-name('TEMPTS#')"/>
+                <output path="output1/Phone"/>
+            </move>
+            <move>
+                <input path="SYS/msl:db-name('USER$')/CTIME"/>
+                <output path="output1/Initial"/>
+            </move>
+        </select>
+    </mappingDeclaration>
+</mappingRoot>

@@ -1,0 +1,11 @@
+/*EATE FUNCTION Main() RETURNS BOOLE*/ BEGIN
+SET Environment.DBSELECT.row[] = SELECT * FROM Database.ESB.EMAIL_LIST; DECLARE I INTEGER 1;
+DECLARE J INTEGER CARDINALITY(Environment.DBSELECT.*[]); WHILE I <= J DO
+SET OutputRoot.XMLNSC.emaillist.id = Environment.DBSELECT.row[I].ID;
+SET OutputRoot.XMLNSC.emaillist.name = Environment.DBSELECT.row[I].NAME; SET OutputRoot.XMLNSC.emaillist.surname =
+Environment.DBSELECT.row[I].SURNAME;
+SET OutputRoot.XMLNSC.emaillist.email = Environment.DBSELECT.row[I].EMAIL; PROPAGATE TO TERMINAL 'out2';
+SET I = I + 1; END WHILE;
+SET OutputRoot.XMLNSC.result.number = J;
+SET OutputRoot.XMLNSC.result.description = 'We just sent ' || CAST(J AS CHARACTER) || ' messages to MQ';
+PROPAGATE TO TERMINAL 'out1'; END;

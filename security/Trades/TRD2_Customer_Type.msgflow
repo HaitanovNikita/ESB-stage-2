@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ComIbmMQInput.msgnode="ComIbmMQInput.msgnode" xmlns:ComIbmMQOutput.msgnode="ComIbmMQOutput.msgnode" xmlns:ComIbmRoute.msgnode="ComIbmRoute.msgnode" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:eflow="http://www.ibm.com/wbi/2005/eflow" xmlns:mbmonitor="http://www.ibm.com/wbi/2008/eflow_mbmonitor" xmlns:utility="http://www.ibm.com/wbi/2005/eflow_utility" nsURI="TRD2_Customer_Type.msgflow"
+    nsPrefix="TRD2_Customer_Type.msgflow">
+  <eClassifiers xmi:type="eflow:FCMComposite" name="FCMComposite_1">
+    <eSuperTypes href="http://www.ibm.com/wbi/2005/eflow#//FCMBlock"/>
+    <translation xmi:type="utility:TranslatableString" key="TRD2_Customer_Type" bundleName="TRD2_Customer_Type" pluginId="Trades"/>
+    <colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/Trades/icons/full/obj16/TRD2_Customer_Type.gif"/>
+    <colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/Trades/icons/full/obj30/TRD2_Customer_Type.gif"/>
+    <longDescription xmi:type="utility:ConstantString" string="Sample program for use with IBM WebSphere Message Broker&#xD;&#xA;© Copyright International Business Machines Corporation 2009, 2010 &#xD;&#xA;Licensed Materials - Property of IBM&#xD;&#xA;"/>
+    <composition>
+      <nodes xmi:type="ComIbmMQInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="38,198" queueName="TRADE.CUST.TYPE.IN" messageDomainProperty="XMLNSC">
+        <translation xmi:type="utility:ConstantString" string="InputTrade"/>
+        <nsMappingTable nsPrefix="PO" namespace="http://www.ibm.com/ProcessOrder"/>
+        <nsMappingTable nsPrefix="tra" namespace="http://www.ibm.com/TradeOrder"/>
+        <monitorEvents eventSourceDescription="Transaction start" eventSourceName="InputTrade.transaction.Start" eventIdentity="Deciding customer type">
+          <eventXMLDoc xmi:type="mbmonitor:MonitorEvent">
+            <globalTransactionCorrelator dataLocation="$Root/XMLNSC/tra:tradeOrder/StockAmount" eventCorrelation="dataLocation">
+              <nsPrefixMap prefix="PO" nsURI="http://www.ibm.com/ProcessOrder"/>
+              <nsPrefixMap prefix="tra" nsURI="http://www.ibm.com/TradeOrder"/>
+            </globalTransactionCorrelator>
+            <parentTransactionCorrelator dataLocation="$Root/XMLNSC/tra:tradeOrder/tra:tradeOrderID" eventCorrelation="dataLocation">
+              <nsPrefixMap prefix="PO" nsURI="http://www.ibm.com/ProcessOrder"/>
+              <nsPrefixMap prefix="tra" nsURI="http://www.ibm.com/TradeOrder"/>
+            </parentTransactionCorrelator>
+            <localTransactionCorrelator dataLocation="$Root/XMLNSC/tra:tradeOrder/tra:customerID" eventCorrelation="dataLocation">
+              <nsPrefixMap prefix="PO" nsURI="http://www.ibm.com/ProcessOrder"/>
+              <nsPrefixMap prefix="tra" nsURI="http://www.ibm.com/TradeOrder"/>
+            </localTransactionCorrelator>
+            <bitStreamData encoding="none" bitstreamContent="none"/>
+            <eventName literal="Deciding customer type"/>
+            <eventFilter dataLocation="true()" isXPath="true">
+              <nsPrefixMap prefix="PO" nsURI="http://www.ibm.com/ProcessOrder"/>
+              <nsPrefixMap prefix="tra" nsURI="http://www.ibm.com/TradeOrder"/>
+            </eventFilter>
+          </eventXMLDoc>
+        </monitorEvents>
+        <monitorEvents eventEnabled="false" eventSourceDescription="Transaction end" eventSourceName="InputTrade.transaction.End" eventIdentity="InputTrade.TransactionEnd" eventFilter="$Root/XMLNSC/PO:purchaseOrder[1]/PO:customerType[1] != 'GUEST'">
+          <eventXMLDoc xmi:type="mbmonitor:MonitorEvent">
+            <globalTransactionCorrelator/>
+            <parentTransactionCorrelator/>
+            <localTransactionCorrelator/>
+            <bitStreamData encoding="none" bitstreamContent="none"/>
+            <eventName literal="InputTrade.TransactionEnd"/>
+            <eventFilter dataLocation="$Root/XMLNSC/PO:purchaseOrder[1]/PO:customerType[1] != 'GUEST'" isXPath="true">
+              <nsPrefixMap prefix="PO" nsURI="http://www.ibm.com/ProcessOrder"/>
+            </eventFilter>
+          </eventXMLDoc>
+        </monitorEvents>
+      </nodes>
+      <nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="357,108" queueName="TRADE.GOLD.IN">
+        <translation xmi:type="utility:ConstantString" string="GoldCustomer"/>
+        <nsMappingTable nsPrefix="PO" namespace="http://www.ibm.com/ProcessOrder"/>
+        <nsMappingTable nsPrefix="tra" namespace="http://www.ibm.com/TradeOrder"/>
+        <monitorEvents eventSourceDescription="In terminal" eventSourceName="GoldCustomer.terminal.in" eventIdentity="Decision: Gold customer">
+          <eventXMLDoc xmi:type="mbmonitor:MonitorEvent">
+            <globalTransactionCorrelator dataLocation="$Root/XMLNSC/tra:tradeOrder/StockAmount" eventCorrelation="dataLocation">
+              <nsPrefixMap prefix="PO" nsURI="http://www.ibm.com/ProcessOrder"/>
+              <nsPrefixMap prefix="tra" nsURI="http://www.ibm.com/TradeOrder"/>
+            </globalTransactionCorrelator>
+            <parentTransactionCorrelator dataLocation="$Root/XMLNSC/tra:tradeOrder/tra:tradeOrderID" eventCorrelation="dataLocation">
+              <nsPrefixMap prefix="PO" nsURI="http://www.ibm.com/ProcessOrder"/>
+              <nsPrefixMap prefix="tra" nsURI="http://www.ibm.com/TradeOrder"/>
+            </parentTransactionCorrelator>
+            <localTransactionCorrelator dataLocation="$Root/XMLNSC/tra:tradeOrder/tra:customerID" eventCorrelation="dataLocation">
+              <nsPrefixMap prefix="PO" nsURI="http://www.ibm.com/ProcessOrder"/>
+              <nsPrefixMap prefix="tra" nsURI="http://www.ibm.com/TradeOrder"/>
+            </localTransactionCorrelator>
+            <bitStreamData encoding="none" bitstreamContent="none"/>
+            <eventName literal="Decision: Gold customer"/>
+            <eventFilter dataLocation="true()" isXPath="true">
+              <nsPrefixMap prefix="PO" nsURI="http://www.ibm.com/ProcessOrder"/>
+              <nsPrefixMap prefix="tra" nsURI="http://www.ibm.com/TradeOrder"/>
+            </eventFilter>
+          </eventXMLDoc>
+        </monitorEvents>
+      </nodes>
+      <nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="354,191" queueName="TRADE.REGULAR.IN">
+        <translation xmi:type="utility:ConstantString" string="RegularCustomer"/>
+        <nsMappingTable nsPrefix="PO" namespace="http://www.ibm.com/ProcessOrder"/>
+        <monitorEvents eventSourceDescription="In terminal" eventSourceName="RegularCustomer.terminal.in" eventIdentity="Decision: Regular customer">
+          <eventXMLDoc xmi:type="mbmonitor:MonitorEvent">
+            <globalTransactionCorrelator dataLocation="$Root/XMLNSC/tra:tradeOrder/StockAmount" eventCorrelation="dataLocation">
+              <nsPrefixMap prefix="PO" nsURI="http://www.ibm.com/ProcessOrder"/>
+            </globalTransactionCorrelator>
+            <parentTransactionCorrelator/>
+            <localTransactionCorrelator/>
+            <bitStreamData encoding="none" bitstreamContent="none"/>
+            <eventName literal="Decision: Regular customer"/>
+            <eventFilter dataLocation="true()" isXPath="true">
+              <nsPrefixMap prefix="PO" nsURI="http://www.ibm.com/ProcessOrder"/>
+            </eventFilter>
+          </eventXMLDoc>
+        </monitorEvents>
+      </nodes>
+      <nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_5" location="358,291" queueName="TRADE.GUEST.IN">
+        <translation xmi:type="utility:ConstantString" string="GuestCustomer"/>
+        <monitorEvents eventSourceDescription="In terminal" eventSourceName="GuestCustomer.terminal.in" eventIdentity="Decision: Guest customer">
+          <eventXMLDoc xmi:type="mbmonitor:MonitorEvent">
+            <globalTransactionCorrelator/>
+            <parentTransactionCorrelator/>
+            <localTransactionCorrelator/>
+            <bitStreamData encoding="none" bitstreamContent="none"/>
+            <eventName literal="Decision: Guest customer"/>
+            <eventFilter dataLocation="true()" isXPath="true"/>
+          </eventXMLDoc>
+        </monitorEvents>
+      </nodes>
+      <nodes xmi:type="ComIbmRoute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_6" location="192,192" distributionMode="first">
+        <outTerminals terminalNodeID="Match" dynamic="true" label="Match"/>
+        <outTerminals terminalNodeID="Gold" dynamic="true" label="Gold"/>
+        <outTerminals terminalNodeID="Regular" dynamic="true" label="Regular"/>
+        <outTerminals terminalNodeID="Guest" dynamic="true" label="Guest"/>
+        <translation xmi:type="utility:ConstantString" string="Route"/>
+        <filterTable filterPattern="substring($Root/XMLNSC/tra:tradeOrder/tra:customerID,1,2) = 'CG'" routingOutputTerminal="Gold"/>
+        <filterTable filterPattern="substring($Root/XMLNSC/tra:tradeOrder/tra:customerID,1,2) = 'CR'" routingOutputTerminal="Regular"/>
+        <nsMappingTable nsPrefix="tra" namespace="http://www.ibm.com/TradeOrder"/>
+      </nodes>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_2" targetNode="FCMComposite_1_2" sourceNode="FCMComposite_1_6" sourceTerminalName="Gold" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_3" targetNode="FCMComposite_1_3" sourceNode="FCMComposite_1_6" sourceTerminalName="Regular" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_4" targetNode="FCMComposite_1_5" sourceNode="FCMComposite_1_6" sourceTerminalName="OutTerminal.default" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_1" targetNode="FCMComposite_1_6" sourceNode="FCMComposite_1_1" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+    </composition>
+    <propertyOrganizer/>
+    <stickyBoard/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ImporterWizardSettingsSection">
+		<item value="" key="folder"/>
+		<item value="DFDLModels" key="project"/>
+		<list key="select_external_locations">
+			<item value="C:\Users\nhaitanov\lab2\App Development II\labfiles\Lab02-DFDL\discriminators\PURCHASES-DISC.cpy"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><MessageBroker name="firstApp">
+  <XSDCollection href="platform:/resource/firstApp/format1.xsd" prefix="" targetNamespace="">
+    <element href="platform:/resource/firstApp/format1.xsd#//id;XSDElementDeclaration" name="id" type="mlib://firstApp#/-/simpleType{http://www.w3.org/2001/XMLSchema}string"/>
+    <element href="platform:/resource/firstApp/format1.xsd#//text;XSDElementDeclaration=1" name="text" type="mlib://firstApp#/-/simpleType{http://www.w3.org/2001/XMLSchema}string"/>
+    <element href="platform:/resource/firstApp/format1.xsd#//code;XSDElementDeclaration=2" name="code" type="mlib://firstApp#/-/simpleType{http://www.w3.org/2001/XMLSchema}string"/>
+    <element href="platform:/resource/firstApp/format1.xsd#//format1;XSDElementDeclaration=3" name="format1"/>
+  </XSDCollection>
+  <XSDCollection href="platform:/resource/firstApp/format2.xsd" prefix="" targetNamespace="">
+    <element href="platform:/resource/firstApp/format2.xsd#//DESCRIPTION;XSDElementDeclaration" name="DESCRIPTION" type="mlib://firstApp#/-/simpleType{http://www.w3.org/2001/XMLSchema}string"/>
+    <element href="platform:/resource/firstApp/format2.xsd#//FORMAT2;XSDElementDeclaration=1" name="FORMAT2"/>
+    <element href="platform:/resource/firstApp/format2.xsd#//ID;XSDElementDeclaration=2" name="ID" type="mlib://firstApp#/-/simpleType{http://www.w3.org/2001/XMLSchema}string"/>
+    <element href="platform:/resource/firstApp/format2.xsd#//TIMESTAMP;XSDElementDeclaration=3" name="TIMESTAMP" type="mlib://firstApp#/-/simpleType{http://www.w3.org/2001/XMLSchema}string"/>
+    <element href="platform:/resource/firstApp/format2.xsd#//CODE;XSDElementDeclaration=4" name="CODE" type="mlib://firstApp#/-/simpleType{http://www.w3.org/2001/XMLSchema}string"/>
+  </XSDCollection>
+</MessageBroker>

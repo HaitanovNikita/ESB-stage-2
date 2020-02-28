@@ -1,0 +1,31 @@
+CREATE PROCEDURE CopyQuarter(IN input REFERENCE,
+							 IN output REFERENCE,
+							 IN jumps INTEGER)
+BEGIN
+	CALL CopyMessageHeaders(input, output);
+	CREATE LASTCHILD OF output DOMAIN 'XMLNSC';
+	CREATE LASTCHILD OF output.XMLNSC NAME 'SaleEnvelope';
+	DECLARE xmlIn REFERENCE TO input.XMLNSC.SaleEnvelope;
+	DECLARE xmlOut REFERENCE TO output.XMLNSC.SaleEnvelope;
+	IF LASTMOVE(xmlOut) <> TRUE THEN
+		THROW USER EXCEPTION CATALOG 'BIPv610' MESSAGE 2959 VALUES ('could not create output message');
+	END IF;
+
+	DECLARE invoices INTEGER CAST (xmlIn.Header.SaleListCount AS INTEGER);
+	DECLARE quarter INTEGER invoices/4;
+	IF invoices <> (quarter*4) THEN
+		THROW USER EXCEPTION CATALOG 'BIPv610' MESSAGE 2959 VALUES ('not divisible by 4', invoices);
+	END IF;	
+	
+	IF jumps > 3 THEN
+		THROW USER EXCEPTION CATALOG 'BIPv610' MESSAGE 2959 VALUES ('too many jumps', jumps);
+	END IF;		
+	
+	DECLARE count INTEGER 1;
+	DECLARE copyRef REFERENCE TO xmlIn.SaleList[(jumps*quarter)+count];
+	WHILE count <= quarter DO
+		SET xmlOut.SaleList[count] = copyRef;
+		MOVE copyRef NEXTSIBLING;
+		SET count = count + 1;
+	END WHILE;
+END;

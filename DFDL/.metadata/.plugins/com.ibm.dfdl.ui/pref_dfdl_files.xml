@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+<preferenceForDFDLFile dfdlFileLocation="/DFDLModels/Companies.xsd" didLastParseUseOutputFromUnparser="false" lastFileUsedForParse="C:\Users\nhaitanov\lab2\App Development II\labfiles\Lab02-DFDL\data\Companies.txt" messageRootUsedForLastParse="Companies"/>
+<preferenceForDFDLFile dfdlFileLocation="/DFDLModels/PURCHASES-DISC.xsd" didLastParseUseOutputFromUnparser="false" lastFileUsedForParse="C:\Users\nhaitanov\lab2\App Development II\labfiles\Lab02-DFDL\discriminators\Purchases_disc_Russia.dat" messageRootUsedForLastParse="PURCHASESDISC"/>
+</preferences>

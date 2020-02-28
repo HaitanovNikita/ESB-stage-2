@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><MessageBroker name="DFDLModels">
+  <XSDCollection href="platform:/resource/DFDLModels/Company.xsd" prefix="" targetNamespace="">
+    <import name="IBMdefined/RecordSeparatedFieldFormat.xsd" targetNamespace="http://www.ibm.com/dfdl/RecordSeparatedFieldFormat"/>
+    <element href="platform:/resource/DFDLModels/Company.xsd#//Company;XSDElementDeclaration" name="Company"/>
+  </XSDCollection>
+  <XSDCollection href="platform:/resource/DFDLModels/IBMdefined/RecordSeparatedFieldFormat.xsd" prefix="tns" targetNamespace="http://www.ibm.com/dfdl/RecordSeparatedFieldFormat"/>
+  <XSDCollection href="platform:/resource/DFDLModels/Companies.xsd" prefix="" targetNamespace="">
+    <include name="/DFDLModels/Company.xsd" targetNamespace=""/>
+    <import name="IBMdefined/RecordSeparatedFieldFormat.xsd" targetNamespace="http://www.ibm.com/dfdl/RecordSeparatedFieldFormat"/>
+    <element href="platform:/resource/DFDLModels/Companies.xsd#//Companies;XSDElementDeclaration" name="Companies"/>
+  </XSDCollection>
+  <XSDCollection href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd" prefix="tns" targetNamespace="http://www.ibm.com/dfdl/CobolDataDefinitionFormat">
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PICX__string;XSDSimpleTypeDefinition" name="PICX__string" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC9-Display-Zoned__decimal;XSDSimpleTypeDefinition=1" name="PIC9-Display-Zoned__decimal" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC9-Display-Zoned__short;XSDSimpleTypeDefinition=2" name="PIC9-Display-Zoned__short" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PICS9-Display-Zoned__short;XSDSimpleTypeDefinition=3" name="PICS9-Display-Zoned__short" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC9-Display-Zoned__int;XSDSimpleTypeDefinition=4" name="PIC9-Display-Zoned__int" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PICS9-Display-Zoned__int;XSDSimpleTypeDefinition=5" name="PICS9-Display-Zoned__int" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC9-Display-Zoned__long;XSDSimpleTypeDefinition=6" name="PIC9-Display-Zoned__long" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PICS9-Display-Zoned__long;XSDSimpleTypeDefinition=7" name="PICS9-Display-Zoned__long" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC9-Display-Zoned__integer;XSDSimpleTypeDefinition=8" name="PIC9-Display-Zoned__integer" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PICS9-Display-Zoned__integer;XSDSimpleTypeDefinition=9" name="PICS9-Display-Zoned__integer" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC9-Display__decimal;XSDSimpleTypeDefinition=10" name="PIC9-Display__decimal" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC9-Display__short;XSDSimpleTypeDefinition=11" name="PIC9-Display__short" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PICS9-Display__short;XSDSimpleTypeDefinition=12" name="PICS9-Display__short" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC9-Display__int;XSDSimpleTypeDefinition=13" name="PIC9-Display__int" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PICS9-Display__int;XSDSimpleTypeDefinition=14" name="PICS9-Display__int" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC9-Display__long;XSDSimpleTypeDefinition=15" name="PIC9-Display__long" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PICS9-Display__long;XSDSimpleTypeDefinition=16" name="PICS9-Display__long" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC9-Display__integer;XSDSimpleTypeDefinition=17" name="PIC9-Display__integer" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PICS9-Display__integer;XSDSimpleTypeDefinition=18" name="PICS9-Display__integer" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC9-Comp3__decimal;XSDSimpleTypeDefinition=19" name="PIC9-Comp3__decimal" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC9-Comp3__short;XSDSimpleTypeDefinition=20" name="PIC9-Comp3__short" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PICS9-Comp3__short;XSDSimpleTypeDefinition=21" name="PICS9-Comp3__short" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC9-Comp3__int;XSDSimpleTypeDefinition=22" name="PIC9-Comp3__int" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PICS9-Comp3__int;XSDSimpleTypeDefinition=23" name="PICS9-Comp3__int" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC9-Comp3__long;XSDSimpleTypeDefinition=24" name="PIC9-Comp3__long" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PICS9-Comp3__long;XSDSimpleTypeDefinition=25" name="PICS9-Comp3__long" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC9-Comp3__integer;XSDSimpleTypeDefinition=26" name="PIC9-Comp3__integer" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PICS9-Comp3__integer;XSDSimpleTypeDefinition=27" name="PICS9-Comp3__integer" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC9_Comp__decimal;XSDSimpleTypeDefinition=28" name="PIC9_Comp__decimal" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC9-Comp__short;XSDSimpleTypeDefinition=29" name="PIC9-Comp__short" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PICS9-Comp__short;XSDSimpleTypeDefinition=30" name="PICS9-Comp__short" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC9-Comp__int;XSDSimpleTypeDefinition=31" name="PIC9-Comp__int" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PICS9-Comp__int;XSDSimpleTypeDefinition=32" name="PICS9-Comp__int" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC9-Comp__long;XSDSimpleTypeDefinition=33" name="PIC9-Comp__long" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PICS9-Comp__long;XSDSimpleTypeDefinition=34" name="PICS9-Comp__long" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC9-Comp__integer;XSDSimpleTypeDefinition=35" name="PIC9-Comp__integer" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PICS9-Comp__integer;XSDSimpleTypeDefinition=36" name="PICS9-Comp__integer" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PICS9-Comp5__short;XSDSimpleTypeDefinition=37" name="PICS9-Comp5__short" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC9-Comp5__short;XSDSimpleTypeDefinition=38" name="PIC9-Comp5__short" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PICS9-Comp5__int;XSDSimpleTypeDefinition=39" name="PICS9-Comp5__int" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC9-Comp5__int;XSDSimpleTypeDefinition=40" name="PIC9-Comp5__int" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PICS9-Comp5__long;XSDSimpleTypeDefinition=41" name="PICS9-Comp5__long" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC9-Comp5__long;XSDSimpleTypeDefinition=42" name="PIC9-Comp5__long" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC9-Comp1__float;XSDSimpleTypeDefinition=43" name="PIC9-Comp1__float" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC9-Comp2__double;XSDSimpleTypeDefinition=44" name="PIC9-Comp2__double" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC9-External-Float__string;XSDSimpleTypeDefinition=45" name="PIC9-External-Float__string" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC-Numeric-Edited-Display__string;XSDSimpleTypeDefinition=46" name="PIC-Numeric-Edited-Display__string" variety="atomic"/>
+    <simpleType href="platform:/resource/DFDLModels/IBMdefined/CobolDataDefinitionFormat.xsd#//PIC-National__string;XSDSimpleTypeDefinition=47" name="PIC-National__string" variety="atomic"/>
+  </XSDCollection>
+  <XSDCollection href="platform:/resource/DFDLModels/PURCHASES-DISC.xsd" prefix="" targetNamespace="">
+    <import name="IBMdefined/CobolDataDefinitionFormat.xsd" targetNamespace="http://www.ibm.com/dfdl/CobolDataDefinitionFormat"/>
+    <element href="platform:/resource/DFDLModels/PURCHASES-DISC.xsd#//PURCHASESDISC;XSDElementDeclaration" name="PURCHASESDISC" type="mlib://DFDLModels#/-/complexType{}PURCHASESDISC"/>
+    <complexType baseType="mlib://DFDLModels#/-/complexType{http://www.w3.org/2001/XMLSchema}anyType" href="platform:/resource/DFDLModels/PURCHASES-DISC.xsd#//PURCHASESDISC;XSDComplexTypeDefinition" name="PURCHASESDISC"/>
+  </XSDCollection>
+</MessageBroker>

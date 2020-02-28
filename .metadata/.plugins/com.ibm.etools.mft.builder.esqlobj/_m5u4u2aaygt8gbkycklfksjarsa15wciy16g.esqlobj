@@ -1,0 +1,6 @@
+/*EATE FUNCTION Main() RETURNS BOOLE*/
+	BEGIN
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		CALL CopyQuarter(InputRoot, OutputRoot, 0);
+		RETURN TRUE;
+	END;

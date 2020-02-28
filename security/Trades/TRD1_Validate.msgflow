@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ComIbmCompute.msgnode="ComIbmCompute.msgnode" xmlns:ComIbmMQInput.msgnode="ComIbmMQInput.msgnode" xmlns:ComIbmMQOutput.msgnode="ComIbmMQOutput.msgnode" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:eflow="http://www.ibm.com/wbi/2005/eflow" xmlns:mbmonitor="http://www.ibm.com/wbi/2008/eflow_mbmonitor" xmlns:utility="http://www.ibm.com/wbi/2005/eflow_utility" nsURI="TRD1_Validate.msgflow"
+    nsPrefix="TRD1_Validate.msgflow">
+  <eClassifiers xmi:type="eflow:FCMComposite" name="FCMComposite_1">
+    <eSuperTypes href="http://www.ibm.com/wbi/2005/eflow#//FCMBlock"/>
+    <translation xmi:type="utility:TranslatableString" key="TRD1_Validate" bundleName="TRD1_Validate" pluginId="Trades"/>
+    <colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/Trades/icons/full/obj16/TRD1_Validate.gif"/>
+    <colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/Trades/icons/full/obj30/TRD1_Validate.gif"/>
+    <composition>
+      <nodes xmi:type="ComIbmMQInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="51,124" queueName="TRADE.VALIDATE.IN" messageDomainProperty="XMLNSC" validateTiming="complete" validateMaster="contentAndValue">
+        <translation xmi:type="utility:ConstantString" string="Receive Trade"/>
+        <nsMappingTable nsPrefix="tra" namespace="http://www.ibm.com/TradeOrder"/>
+        <monitorEvents eventSourceDescription="Transaction start" eventSourceName="Receive Trade.transaction.Start" eventIdentity="Trade instruction received">
+          <eventXMLDoc xmi:type="mbmonitor:MonitorEvent">
+            <globalTransactionCorrelator/>
+            <parentTransactionCorrelator dataLocation="$Root/XMLNSC/tra:tradeOrder/tra:tradeOrderID" eventCorrelation="dataLocation">
+              <nsPrefixMap prefix="tra" nsURI="http://www.ibm.com/TradeOrder"/>
+            </parentTransactionCorrelator>
+            <localTransactionCorrelator dataLocation="$Root/XMLNSC/tra:tradeOrder/tra:customerID" eventCorrelation="dataLocation">
+              <nsPrefixMap prefix="tra" nsURI="http://www.ibm.com/TradeOrder"/>
+            </localTransactionCorrelator>
+            <bitStreamData encoding="base64Binary"/>
+            <eventName literal="Trade instruction received"/>
+            <eventFilter dataLocation="true()" isXPath="true">
+              <nsPrefixMap prefix="tra" nsURI="http://www.ibm.com/TradeOrder"/>
+            </eventFilter>
+          </eventXMLDoc>
+        </monitorEvents>
+      </nodes>
+      <nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="310,145" queueName="TRADE.CUST.TYPE.IN" validateMaster="none">
+        <translation xmi:type="utility:ConstantString" string="Decide Customer Type"/>
+      </nodes>
+      <nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="248,26" queueName="TRADE.VALIDATION.FAILURE.IN">
+        <translation xmi:type="utility:ConstantString" string="Validation Failure"/>
+        <nsMappingTable nsPrefix="tra" namespace="http://www.ibm.com/TradeOrder"/>
+        <monitorEvents eventSourceDescription="In terminal" eventSourceName="Validation Failure.terminal.in" eventIdentity="Data validation failure">
+          <eventXMLDoc xmi:type="mbmonitor:MonitorEvent">
+            <applicationData dataLocation="$ExceptionList" isXPath="true" complexData="true">
+              <nsPrefixMap prefix="tra" nsURI="http://www.ibm.com/TradeOrder"/>
+            </applicationData>
+            <globalTransactionCorrelator dataLocation="$Root/XMLNSC/tra:tradeOrder/tra:tradeStock" eventCorrelation="dataLocation">
+              <nsPrefixMap prefix="tra" nsURI="http://www.ibm.com/TradeOrder"/>
+            </globalTransactionCorrelator>
+            <parentTransactionCorrelator dataLocation="$Root/XMLNSC/tra:tradeOrder/tra:tradeOrderID" eventCorrelation="dataLocation">
+              <nsPrefixMap prefix="tra" nsURI="http://www.ibm.com/TradeOrder"/>
+            </parentTransactionCorrelator>
+            <localTransactionCorrelator dataLocation="$Root/XMLNSC/tra:tradeOrder/tra:customerID" eventCorrelation="dataLocation">
+              <nsPrefixMap prefix="tra" nsURI="http://www.ibm.com/TradeOrder"/>
+            </localTransactionCorrelator>
+            <bitStreamData encoding="base64Binary"/>
+            <eventName literal="Data validation failure"/>
+            <eventFilter dataLocation="true()" isXPath="true">
+              <nsPrefixMap prefix="tra" nsURI="http://www.ibm.com/TradeOrder"/>
+            </eventFilter>
+          </eventXMLDoc>
+        </monitorEvents>
+      </nodes>
+      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_4" location="200,215" computeExpression="esql://routine/#TRD1_Validate_Compute.Main" computeMode="destinationAndMessage">
+        <translation xmi:type="utility:ConstantString" string="Compute"/>
+      </nodes>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_2" targetNode="FCMComposite_1_3" sourceNode="FCMComposite_1_1" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_3" targetNode="FCMComposite_1_3" sourceNode="FCMComposite_1_1" sourceTerminalName="OutTerminal.catch" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_5" targetNode="FCMComposite_1_2" sourceNode="FCMComposite_1_4" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_7" targetNode="FCMComposite_1_4" sourceNode="FCMComposite_1_1" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+    </composition>
+    <propertyOrganizer/>
+    <stickyBoard/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://EmployeeService" xmlns:Q1="http://training.ibm.com/Employee" xmlns:tns="http://EmployeeService">
+    <xsd:import namespace="http://training.ibm.com/Employee" schemaLocation="Employee.xsd"/>
+    <xsd:element xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions" ibmSchExtn:docRoot="true" name="getEmployee">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Employee" nillable="true" type="Q1:EmployeeType"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions" ibmSchExtn:docRoot="true" name="getEmployeeResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="output1" nillable="true" type="Q1:EmployeeType"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>

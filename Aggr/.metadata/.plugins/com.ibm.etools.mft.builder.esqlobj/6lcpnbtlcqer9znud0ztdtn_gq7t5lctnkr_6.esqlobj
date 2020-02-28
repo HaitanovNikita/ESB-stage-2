@@ -1,0 +1,8 @@
+CREATE COMPUTE MODULE FanOut_CreateRequest3
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputLocalEnvironment = InputLocalEnvironment;
+		CALL CopyQuarter(InputRoot, OutputRoot, 2);
+		RETURN TRUE;
+	END;
+END MODULE;

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><mappingRoot xmlns="http://www.ibm.com/2008/ccl/Mapping" domainID="com.ibm.msl.mapping.xml" domainIDExtension="mb" mainMap="true" targetNamespace="gen" version="8.0.5.0" xmlns:map="gen">
+    <input path="mbsharedlib://Lab16Lib/lab16_InlineSchema1.xsd"/>
+    <output path="mbsharedlib://Lab16Lib/lab16_InlineSchema1.xsd"/>
+    <namespaces>
+        <namespace kind="supplement" prefix="io" uri="http://lab16"/>
+    </namespaces>
+    <generation engine="xquery"/>
+    <mappingDeclaration name="operation1_Request_Response_Mapping">
+        <input namespace="http://lab16" path="mb:msg(operation1,assembly,XMLNSC,Properties)" var="ComIbmMessageAssembly_operation1"/>
+        <output namespace="http://lab16" path="mb:msg(operation1Response,assembly,XMLNSC,Properties)" var="ComIbmMessageAssembly_operation1Response"/>
+        <move>
+            <input path="$ComIbmMessageAssembly_operation1/Properties"/>
+            <output path="$ComIbmMessageAssembly_operation1Response/Properties"/>
+            <override>
+                <assign value="{Lab16Lib}">
+                    <output path="$ComIbmMessageAssembly_operation1Response/Properties/MessageSet"/>
+                </assign>
+            </override>
+        </move>
+        <move>
+            <input path="$ComIbmMessageAssembly_operation1/operation1/request/quoteId"/>
+            <output path="$ComIbmMessageAssembly_operation1Response/operation1Response/response/quoteId"/>
+        </move>
+        <condition>
+            <if>
+                <input path="$ComIbmMessageAssembly_operation1/operation1/request/quoteId"/>
+                <output path="$ComIbmMessageAssembly_operation1Response/operation1Response/response/price"/>
+                <test lang=""/>
+                <assign value="181">
+                    <output path="."/>
+                </assign>
+            </if>
+            <elseif>
+                <input path="$ComIbmMessageAssembly_operation1/operation1/request/quoteId"/>
+                <output path="$ComIbmMessageAssembly_operation1Response/operation1Response/response/price"/>
+                <test lang=""/>
+                <assign value="31">
+                    <output path="."/>
+                </assign>
+            </elseif>
+            <else>
+                <input path="$ComIbmMessageAssembly_operation1/operation1/request/quoteId"/>
+                <output path="$ComIbmMessageAssembly_operation1Response/operation1Response/response/price"/>
+                <assign value="0">
+                    <output path="."/>
+                </assign>
+            </else>
+        </condition>
+    </mappingDeclaration>
+</mappingRoot>

@@ -1,0 +1,8 @@
+CREATE COMPUTE MODULE SOAPNodesSampleConsumerFlow_Compute_Response
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot.Properties = InputRoot.Properties;
+		SET OutputRoot.XMLNSC = InputRoot.XMLNSC;
+		RETURN TRUE;
+	END;
+END MODULE;

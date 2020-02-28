@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><MessageBroker name="Trades">
+  <XSDCollection href="platform:/resource/Trades/TradeMessage.xsd" prefix="trade" targetNamespace="http://www.ibm.com/TradeOrder">
+    <element href="platform:/resource/Trades/TradeMessage.xsd#//tradeStock;XSDElementDeclaration" name="tradeStock" type="mlib://Trades#/-/simpleType{http://www.w3.org/2001/XMLSchema}string"/>
+    <element href="platform:/resource/Trades/TradeMessage.xsd#//tradeOrderID;XSDElementDeclaration=1" name="tradeOrderID" type="mlib://Trades#/-/simpleType{http://www.w3.org/2001/XMLSchema}string"/>
+    <element href="platform:/resource/Trades/TradeMessage.xsd#//customerID;XSDElementDeclaration=2" name="customerID" type="mlib://Trades#/-/simpleType{http://www.w3.org/2001/XMLSchema}string"/>
+    <element href="platform:/resource/Trades/TradeMessage.xsd#//tradeOrder;XSDElementDeclaration=3" name="tradeOrder"/>
+    <element href="platform:/resource/Trades/TradeMessage.xsd#//tradeAmount;XSDElementDeclaration=4" name="tradeAmount" type="mlib://Trades#/-/simpleType{http://www.w3.org/2001/XMLSchema}string"/>
+  </XSDCollection>
+</MessageBroker>

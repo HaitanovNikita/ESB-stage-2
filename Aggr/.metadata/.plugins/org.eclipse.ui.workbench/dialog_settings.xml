@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="350" key="dialogWidth"/>
+		<item value="250" key="dialogHeight"/>
+		<list key="orderedProviders">
+			<item value="org.eclipse.ui.preferences"/>
+			<item value="org.eclipse.ui.perspectives"/>
+		</list>
+		<list key="textArray">
+			<item value="unit test clie"/>
+			<item value="integration de"/>
+		</list>
+		<list key="orderedElements">
+			<item value="com.ibm.etools.mft.unittest.ui.preferences.MBTestClientPreferencePage"/>
+			<item value="com.ibm.etools.mft.perspectives.BrokerDevelopmentPerspective"/>
+		</list>
+		<list key="textEntries">
+			<item value="1"/>
+			<item value="1"/>
+		</list>
+	</section>
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="8" key="DIALOG_Y_ORIGIN"/>
+		<item value="318" key="DIALOG_X_ORIGIN"/>
+	</section>
+	<section name="ImportExportAction">
+		<item value="com.ibm.bpm.common.ui.project.interchange.ProjectInterchangeImport" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<item value="com.ibm.bpm.common.ui.project.interchange.ProjectInterchangeExport" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="com.ibm.bpm.common.ui.project.interchange"/>
+		</list>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="com.ibm.bpm.common.ui.project.interchange"/>
+		</list>
+	</section>
+</section>

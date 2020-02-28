@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.etools.mft.unittest.core.models.client="http:///com/ibm/etools/mft/unittest/core/models/client.ecore" xmlns:com.ibm.wbit.comptest.common.models.event="http:///com/ibm/etools/mft/unittest/common/models/event.ecore" xmlns:jms="http:///com/ibm//etools/mft/unittest/common/model2/jms" xmlns:model2="http:///com/ibm//etools/mft/unittest/common/model2" xmlns:mq="http:///com/ibm//etools/mft/unittest/common/model2/mq">
+  <com.ibm.etools.mft.unittest.core.models.client:EclipseClient iD="1187108195640-330" eventTrace="/1" clientID="1187108195640-330">
+    <scopes xsi:type="model2:FlowTestScope" name="Configuration" iD="default">
+      <testModules xsi:type="model2:TestMsgFlow" name="/SecurityIdentitySampleFlowProject/SecurityIdentityReportFlow.msgflow" iD="1187108195640-334"/>
+      <testModules xsi:type="model2:TestMsgFlow" name="/SecurityIdentitySampleFlowProject/SecurityIdentitySampleFlow.msgflow" iD="1187108195640-335"/>
+      <settings xsi:type="model2:FlowSettings"/>
+      <settings xsi:type="model2:DeploymentSettings"/>
+      <settings xsi:type="mq:MQSettings"/>
+      <settings xsi:type="jms:JMSSettings"/>
+      <settings xsi:type="mq:MQMessageHeaders"/>
+      <settings xsi:type="jms:JMSMessageHeaders"/>
+      <messageHeaders xsi:type="mq:MQHeader" iD="1187191161156-141" putApplicationName="BRKTSTCLNT" userId="TESTUSER" headerName="Send Identity"/>
+    </scopes>
+  </com.ibm.etools.mft.unittest.core.models.client:EclipseClient>
+  <com.ibm.wbit.comptest.common.models.event:ExecutionEventTrace iD="1187108195640-331" children="/2 /3"/>
+  <mq:InteractiveMQEnqueueEvent iD="1187195953157-224" timestamp="1187195953157" host="localhost" port="0" queueManager="IIBQM" queue="SECURITYIDFROMMQIN">
+    <properties name="SERVER_CHANNEL" stringValue="SYSTEM.BKR.CONFIG"/>
+    <request xsi:type="model2:TestMessage" iD="1187108677483-439" header="/0/@scopes.0/@messageHeaders.0">
+      <properties name="messageSource" stringValue="sourceView"/>
+      <properties name="plainText" stringValue="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;Envelope>&#xD;&#xA;    &lt;Body>&#xD;&#xA;        &lt;MapIdentity>true&lt;/MapIdentity>&#xD;&#xA;    &lt;/Body>&#xD;&#xA;&lt;/Envelope>"/>
+      <properties name="SHOW_HEX_VIEW"/>
+      <properties name="linkedFile"/>
+    </request>
+  </mq:InteractiveMQEnqueueEvent>
+  <mq:InteractiveMQDequeueEvent iD="1187195955941-226" timestamp="1187195955941" host="localhost" port="0" queueManager="IIBQM" queue="SECURITYIDFROMMQOUT">
+    <properties name="SERVER_CHANNEL" stringValue="SYSTEM.BKR.CONFIG"/>
+    <request xsi:type="model2:TestMessage" iD="1187108678074-441"/>
+  </mq:InteractiveMQDequeueEvent>
+</xmi:XMI>

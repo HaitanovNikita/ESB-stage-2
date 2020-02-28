@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dfdl="http://www.ogf.org/dfdl/dfdl-1.0/" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:ibmDfdlExtn="http://www.ibm.com/dfdl/extensions" xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions" xmlns:recSepFieldsFmt="http://www.ibm.com/dfdl/RecordSeparatedFieldFormat">
+        <xsd:include schemaLocation="Company.xsd"/>
+    <xsd:import namespace="http://www.ibm.com/dfdl/RecordSeparatedFieldFormat" schemaLocation="IBMdefined/RecordSeparatedFieldFormat.xsd"/>
+    <xsd:annotation>
+		<xsd:appinfo source="http://www.ogf.org/dfdl/">
+			<dfdl:format documentFinalTerminatorCanBeMissing="yes" encoding="{$dfdl:encoding}" escapeSchemeRef="" occursCountKind="implicit" ref="recSepFieldsFmt:RecordSeparatedFieldsFormat"/>
+		</xsd:appinfo>
+	</xsd:annotation>
+
+	<xsd:element ibmSchExtn:docRoot="true" name="Companies">
+		<xsd:complexType>
+			<xsd:sequence dfdl:initiatedContent="no" dfdl:separator="" dfdl:separatorSuppressionPolicy="anyEmpty">
+				<xsd:element dfdl:initiator="Header{" dfdl:terminator="}%CR;%LF;" name="Header">
+					<xsd:complexType>
+						<xsd:sequence dfdl:initiatedContent="yes" dfdl:separator="," dfdl:separatorSuppressionPolicy="anyEmpty">
+							<xsd:element dfdl:initiator="recDesc" ibmDfdlExtn:sampleValue="head_value1" name="RecordDescription" type="xsd:string"/>
+							<xsd:element dfdl:initiator="compCount" dfdl:textNumberPattern="#0" name="CompanyCount" type="xsd:integer"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+                								<xsd:sequence dfdl:separator="">
+          <xsd:element dfdl:occursCount="{/Companies/Header/CompanyCount}" dfdl:occursCountKind="expression" maxOccurs="unbounded" ref="Company"/>
+        </xsd:sequence>
+                <xsd:element dfdl:initiator="Trailer{" dfdl:terminator="}" name="Trailer">
+					<xsd:complexType>
+						<xsd:sequence dfdl:initiatedContent="yes" dfdl:separator="" dfdl:separatorSuppressionPolicy="anyEmpty">
+							<xsd:element dfdl:initiator="iTrail1" ibmDfdlExtn:sampleValue="trailer_value1" name="chksum" type="xsd:string"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+                			            </xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+</xsd:schema>

@@ -1,0 +1,11 @@
+
+
+Importing file: C:\Users\nhaitanov\IBM\IIBT10\workspace\Lab16Lib\lab16.wsdl
+
+The WSDL import will proceed with bindings lab16HttpBinding.
+Creating wsdl schema document for file:///C:/Users/nhaitanov/IBM/IIBT10/workspace/Lab16Lib/lab16.wsdl.
+Parsing wsdl binding {http://lab16}lab16HttpBinding.
+Parsing wsdl binding input operation1.
+Parsing wsdl binding output operation1.
+Processing doc style for operation operation1.
+Populating WSDL schema lab16.xsd.

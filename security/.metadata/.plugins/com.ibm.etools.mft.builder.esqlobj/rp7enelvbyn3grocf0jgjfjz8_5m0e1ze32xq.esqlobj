@@ -1,0 +1,33 @@
+/*EATE FUNCTION Main() RETURNS BOOLE*/
+	BEGIN
+		CALL CopyEntireMessage();
+		-- Optionally Report the Incomming Identity Source
+		DECLARE OurMsgRef REFERENCE TO OutputRoot.XMLNSC.Envelope.Body;
+		IF lastmove(OurMsgRef) THEN
+			CREATE LASTCHILD OF OurMsgRef NAME 'PropagatedIdentityReport';
+			MOVE OurMsgRef LASTCHILD;
+			CREATE LASTCHILD OF OurMsgRef NAME 'Type' VALUE InputRoot.Properties.IdentitySourceType;
+			CREATE LASTCHILD OF OurMsgRef NAME 'Token' VALUE InputRoot.Properties.IdentitySourceToken;
+			CREATE LASTCHILD OF OurMsgRef NAME 'Password' VALUE InputRoot.Properties.IdentitySourcePassword;
+			CREATE LASTCHILD OF OurMsgRef NAME 'IssuedBy' VALUE InputRoot.Properties.IdentitySourceIssuedBy;
+		END IF;
+		-- Output is MQ, so delete HTTP headers from tree
+		SET OutputRoot.HTTPInputHeader = NULL;
+		-- For clarrity remove "MessageIdentity" from tree if present
+		SET OutputRoot.XMLNSC.Envelope.Body.MessageIdentity = NULL;
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;

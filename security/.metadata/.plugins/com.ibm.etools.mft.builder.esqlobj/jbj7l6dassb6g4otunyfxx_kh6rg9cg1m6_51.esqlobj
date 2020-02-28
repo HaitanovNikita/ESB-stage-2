@@ -1,0 +1,27 @@
+/*EATE FUNCTION Main() RETURNS BOOLE*/
+	BEGIN
+		CALL CopyEntireMessage();
+		-- Set the Mapped Identity if the Input message includes the "flag" 
+		-- to trigger Identity Mapping
+		DECLARE MapIdActionsRef REFERENCE TO InputRoot.XMLNSC.Envelope.Body.MapIdentity;
+		IF lastmove(MapIdActionsRef) THEN
+			-- Create a username and password credential set
+			SET OutputRoot.Properties.IdentityMappedType = 'usernameAndPassword';
+			-- fold Source Username to lowercase
+			DECLARE lusername CHAR;
+			SET lusername = LCASE(InputRoot.Properties.IdentitySourceToken);
+			-- Username token is email address, created from the source username appended with "@company.com"
+			SET OutputRoot.Properties.IdentityMappedToken =  lusername || '@company.com';
+			-- Password is created as the source username prepended with "p_" and appended with current year
+			DECLARE yearStr CHAR;
+			SET yearStr = (EXTRACT(YEAR FROM CURRENT_TIMESTAMP));
+			SET OutputRoot.Properties.IdentityMappedPassword = 'p_' || lusername || yearStr;
+			-- Issuer is this module
+			SET OutputRoot.Properties.IdentityMappedIssuedBy = 'SecurityIdentitySubFlow_MapIdentity';
+		END IF;
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;

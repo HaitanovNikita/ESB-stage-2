@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><mappingRoot xmlns="http://www.ibm.com/2008/ccl/Mapping" domainID="com.ibm.msl.mapping.xml" domainIDExtension="mb" mainMap="true" targetNamespace="default" version="8.0.5.0" xmlns:map="default">
+    <input path="/DFDLschema/userlistDFDL.xsd"/>
+    <output path="/userlist.xsd"/>
+    <generation engine="xquery"/>
+    <mappingDeclaration name="lab6_Mapping">
+        <input path="mb:msg(userlistDFDL,assembly,DFDL,Properties)" var="ComIbmMessageAssembly_userlistDFDL"/>
+        <output path="mb:msg(userlist,assembly,XMLNSC,Properties)" var="ComIbmMessageAssembly_userlist"/>
+        <move>
+            <input path="$ComIbmMessageAssembly_userlistDFDL/Properties"/>
+            <output path="$ComIbmMessageAssembly_userlist/Properties"/>
+        </move>
+        <foreach>
+            <input path="$ComIbmMessageAssembly_userlistDFDL/userlistDFDL/record"/>
+            <output path="$ComIbmMessageAssembly_userlist/userlist/user"/>
+            <move>
+                <input path="id"/>
+                <output path="id"/>
+            </move>
+            <move>
+                <input path="firstname"/>
+                <output path="firstname"/>
+            </move>
+            <move>
+                <input path="lastname"/>
+                <output path="lastname"/>
+            </move>
+            <move>
+                <input path="email"/>
+                <output path="email"/>
+            </move>
+        </foreach>
+    </mappingDeclaration>
+</mappingRoot>

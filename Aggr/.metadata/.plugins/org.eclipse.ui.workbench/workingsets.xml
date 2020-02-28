@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="com.ibm.etools.mft.navigator.BrokerWorkingSet.AppLib" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1582706844140_1" label="[Aggregation Message Flows]" name="[Aggregation Message Flows]">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Aggregation Message Flows" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1582706711561_0" label="Window Working Set" name="Aggregate for window 1582706711561"/>
+</workingSetManager>

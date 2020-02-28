@@ -1,0 +1,13 @@
+
+
+Importing file: C:\Workspace\IntSvcs\EmployeeService\EmployeeService.wsdl
+
+The WSDL import will proceed with bindings EmployeeServiceHttpBinding.
+Creating wsdl schema document for file:///C:/Workspace/IntSvcs/EmployeeService/EmployeeService.wsdl.
+Parsing wsdl binding {http://EmployeeService}EmployeeServiceHttpBinding.
+Parsing wsdl binding input operation1.
+Parsing wsdl binding output operation1.
+Processing doc style for operation operation1.
+Populating WSDL schema EmployeeService.xsd.
+Creating file EmployeeService.xsd in the workspace.
+Creating file EmployeeService_InlineSchema1.xsd in the workspace.

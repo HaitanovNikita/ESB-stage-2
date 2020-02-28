@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ComIbmMQInput.msgnode="ComIbmMQInput.msgnode" xmlns:ComIbmMQOutput.msgnode="ComIbmMQOutput.msgnode" xmlns:ComIbmWSInput.msgnode="ComIbmWSInput.msgnode" xmlns:ComIbmWSReply.msgnode="ComIbmWSReply.msgnode" xmlns:SecurityIdentitySubFlow.msgflow="SecurityIdentitySubFlow.msgflow" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:eflow="http://www.ibm.com/wbi/2005/eflow" xmlns:utility="http://www.ibm.com/wbi/2005/eflow_utility" nsURI="SecurityIdentitySampleFlow.msgflow"
+    nsPrefix="SecurityIdentitySampleFlow.msgflow">
+  <eClassifiers xmi:type="eflow:FCMComposite" name="FCMComposite_1">
+    <eSuperTypes href="http://www.ibm.com/wbi/2005/eflow#//FCMBlock"/>
+    <translation xmi:type="utility:TranslatableString" key="SecurityIdentitySampleFlow" bundleName="SecurityIdentitySampleFlow" pluginId="SecurityIdentitySampleFlowProject"/>
+    <colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/SecurityIdentitySampleFlowProject/icons/full/obj16/SecurityIdentitySampleFlow.gif"/>
+    <colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/SecurityIdentitySampleFlowProject/icons/full/obj30/SecurityIdentitySampleFlow.gif"/>
+    <longDescription xmi:type="utility:ConstantString" string="Sample program for use with IBM WebSphere Message Broker&#xD;&#xA;© Copyright International Business Machines Corporation 2007, 2010&#xD;&#xA;Licensed Materials - Property of IBM"/>
+    <composition>
+      <nodes xmi:type="ComIbmWSReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="256,20">
+        <translation xmi:type="utility:ConstantString" string="HTTP_ID Reply"/>
+      </nodes>
+      <nodes xmi:type="ComIbmWSInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_4" location="10,24" URLSpecifier="/Security/IdentityFromHttp" messageDomainProperty="XMLNSC">
+        <translation xmi:type="utility:ConstantString" string="HTTP_ID"/>
+      </nodes>
+      <nodes xmi:type="ComIbmMQInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_5" location="10,89" queueName="SECURITYIDFROMMQIN" messageDomainProperty="XMLNSC">
+        <translation xmi:type="utility:ConstantString" string="MQ_ID"/>
+      </nodes>
+      <nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_7" location="256,89" queueName="SECURITYIDFROMMQOUT">
+        <translation xmi:type="utility:ConstantString" string="MQ_ID Output"/>
+      </nodes>
+      <nodes xmi:type="ComIbmMQInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_10" location="10,158" queueName="SECURITYIDFROMMSGIN" messageDomainProperty="XMLNSC" identityType="usernameAndPassword" identityTokenLocation="$Body/Envelope/Body/MessageIdentity/Username" identityPasswordLocation="InputRoot.XMLNSC.Envelope.Body.MessageIdentity.Password" identityIssuedByLocation="$Body/Envelope/Body/MessageIdentity/IssuedBy">
+        <translation xmi:type="utility:ConstantString" string="MSG_ID"/>
+      </nodes>
+      <nodes xmi:type="SecurityIdentitySubFlow.msgflow:FCMComposite_1" xmi:id="FCMComposite_1_3" location="93,20">
+        <translation xmi:type="utility:ConstantString" string="SecurityIdentitySubFlow1"/>
+      </nodes>
+      <nodes xmi:type="SecurityIdentitySubFlow.msgflow:FCMComposite_1" xmi:id="FCMComposite_1_6" location="93,89">
+        <translation xmi:type="utility:ConstantString" string="SecurityIdentitySubFlow2"/>
+      </nodes>
+      <nodes xmi:type="SecurityIdentitySubFlow.msgflow:FCMComposite_1" xmi:id="FCMComposite_1_11" location="93,158">
+        <translation xmi:type="utility:ConstantString" string="SecurityIdentitySubFlow3"/>
+      </nodes>
+      <nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_12" location="256,158" queueName="SECURITYIDFROMMSGOUT">
+        <translation xmi:type="utility:ConstantString" string="MSG_ID Output"/>
+      </nodes>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_3" targetNode="FCMComposite_1_3" sourceNode="FCMComposite_1_4" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.Input"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_4" targetNode="FCMComposite_1_2" sourceNode="FCMComposite_1_3" sourceTerminalName="OutTerminal.Output" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_6" targetNode="FCMComposite_1_7" sourceNode="FCMComposite_1_6" sourceTerminalName="OutTerminal.Output" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_7" targetNode="FCMComposite_1_11" sourceNode="FCMComposite_1_10" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.Input"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_8" targetNode="FCMComposite_1_12" sourceNode="FCMComposite_1_11" sourceTerminalName="OutTerminal.Output" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_5" targetNode="FCMComposite_1_6" sourceNode="FCMComposite_1_5" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.Input"/>
+    </composition>
+    <propertyOrganizer/>
+    <stickyBoard/>
+  </eClassifiers>
+</ecore:EPackage>

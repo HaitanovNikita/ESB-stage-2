@@ -1,0 +1,171 @@
+!SESSION 2020-02-26 14:27:06.487 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 10 amd64-64 Compressed References 20160630_309914 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20160630_1516_B309914
+JIT  - tr.r13.java_20160629_120282
+GC   - R27_Java727_SR3_20160630_1516_B309914_CMPRSS
+J9CL - 20160630_309914
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide tools_auto -showlocation -product com.ibm.etools.msgbroker.tooling.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide tools_auto -showlocation -product com.ibm.etools.msgbroker.tooling.ide
+
+!ENTRY org.eclipse.emf.ecore 2 0 2020-02-26 14:27:09.941
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY org.eclipse.ui 2 2 2020-02-26 14:27:15.627
+!MESSAGE Invalid preference category path: com.ibm.importer.preferences (bundle: com.ibm.adapter.c, page: com.ibm.adapter.c.ui.preferencepage.CPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2020-02-26 14:27:15.631
+!MESSAGE Invalid preference category path: com.ibm.debug.breakpoints.common.pref.tracepoint (bundle: com.ibm.debug.wsa, page: com.ibm.debug.wsa.WSATracepointPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2020-02-26 14:27:15.632
+!MESSAGE Invalid preference category path: com.ibm.importer.preferences (bundle: com.ibm.etools.cobol.preference.ui, page: com.ibm.etools.cobol.preference.ui.preferencepage.CobolPreferencePage)
+
+!ENTRY org.eclipse.osgi 2 1 2020-02-26 14:27:16.801
+!MESSAGE NLS missing message: overrideSavedTrustStorePasswordDialogTitle in: com.ibm.etools.mft.broker.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2020-02-26 14:27:16.802
+!MESSAGE NLS missing message: overrideSavedTrustStorePasswordDialogDescription in: com.ibm.etools.mft.broker.runtime.messages
+
+!ENTRY com.ibm.mq.runtime 1 0 2020-02-26 14:27:21.374
+!MESSAGE 
+
+!ENTRY com.ibm.mq.runtime 1 0 2020-02-26 14:27:21.375
+!MESSAGE C:\Program Files\IBM\IIB\10.0.0.7\tools>mqsifindmqpath
+
+!ENTRY com.ibm.mq.runtime 1 0 2020-02-26 14:27:22.005
+!MESSAGE BIP8071I: Successful command completion. C:\Program Files\IBM\WebSphere MQ
+
+!ENTRY com.ibm.mq.runtime 1 0 2020-02-26 14:27:22.005
+!MESSAGE MQ Install location found:C:/Program Files/IBM/WebSphere MQ
+
+!ENTRY com.ibm.mq.runtime 1 0 2020-02-26 14:27:22.006
+!MESSAGE 
+!SESSION 2020-02-26 14:27:48.736 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 10 amd64-64 Compressed References 20160630_309914 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20160630_1516_B309914
+JIT  - tr.r13.java_20160629_120282
+GC   - R27_Java727_SR3_20160630_1516_B309914_CMPRSS
+J9CL - 20160630_309914
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide tools_auto -showlocation -product com.ibm.etools.msgbroker.tooling.ide
+Command-line arguments:  -data C:\Workspace\DFDL -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide tools_auto -showlocation -product com.ibm.etools.msgbroker.tooling.ide
+
+!ENTRY org.eclipse.emf.ecore 2 0 2020-02-26 14:27:51.083
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY org.eclipse.ui 2 2 2020-02-26 14:27:53.621
+!MESSAGE Invalid preference category path: com.ibm.importer.preferences (bundle: com.ibm.adapter.c, page: com.ibm.adapter.c.ui.preferencepage.CPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2020-02-26 14:27:53.625
+!MESSAGE Invalid preference category path: com.ibm.debug.breakpoints.common.pref.tracepoint (bundle: com.ibm.debug.wsa, page: com.ibm.debug.wsa.WSATracepointPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2020-02-26 14:27:53.625
+!MESSAGE Invalid preference category path: com.ibm.importer.preferences (bundle: com.ibm.etools.cobol.preference.ui, page: com.ibm.etools.cobol.preference.ui.preferencepage.CobolPreferencePage)
+
+!ENTRY org.eclipse.osgi 2 1 2020-02-26 14:27:54.421
+!MESSAGE NLS missing message: overrideSavedTrustStorePasswordDialogTitle in: com.ibm.etools.mft.broker.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2020-02-26 14:27:54.422
+!MESSAGE NLS missing message: overrideSavedTrustStorePasswordDialogDescription in: com.ibm.etools.mft.broker.runtime.messages
+
+!ENTRY com.ibm.mq.runtime 1 0 2020-02-26 14:27:56.501
+!MESSAGE 
+
+!ENTRY com.ibm.mq.runtime 1 0 2020-02-26 14:27:56.502
+!MESSAGE C:\Program Files\IBM\IIB\10.0.0.7\tools>mqsifindmqpath
+
+!ENTRY com.ibm.mq.runtime 1 0 2020-02-26 14:27:56.933
+!MESSAGE BIP8071I: Successful command completion. C:\Program Files\IBM\WebSphere MQ
+
+!ENTRY com.ibm.mq.runtime 1 0 2020-02-26 14:27:56.936
+!MESSAGE MQ Install location found:C:/Program Files/IBM/WebSphere MQ
+
+!ENTRY com.ibm.mq.runtime 1 0 2020-02-26 14:27:56.937
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2020-02-26 14:29:32.597
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2020-02-26 14:29:32.597
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2020-02-26 15:22:21.519
+!MESSAGE NLS unused message: GenDefinition_WizardPage_ImporterProperties_ResetFieldsTooltip in: com.ibm.dfdl.importer.c.messages
+
+!ENTRY org.eclipse.osgi 2 1 2020-02-26 15:22:21.520
+!MESSAGE NLS missing message: CImporterProvider_description in: com.ibm.dfdl.importer.c.messages
+
+!ENTRY org.eclipse.osgi 2 1 2020-02-26 15:22:21.521
+!MESSAGE NLS missing message: CImporterProvider_imageDescription in: com.ibm.dfdl.importer.c.messages
+
+!ENTRY org.eclipse.osgi 2 1 2020-02-26 15:22:56.219
+!MESSAGE NLS unused message: GenMsgModel_MsgModel_Progress in: com.ibm.etools.msg.importer.framework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2020-02-26 15:22:56.220
+!MESSAGE NLS unused message: GenMsgModel_NewWizard_title in: com.ibm.etools.msg.importer.framework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2020-02-26 15:22:56.221
+!MESSAGE NLS unused message: GenMsgModel_NewWizard_Desc in: com.ibm.etools.msg.importer.framework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2020-02-26 15:22:56.221
+!MESSAGE NLS unused message: GenMsgModel_WizardPage_MsgModelType_title in: com.ibm.etools.msg.importer.framework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2020-02-26 15:22:56.222
+!MESSAGE NLS unused message: GenMsgModel_WizardPage_MsgModelType_desc in: com.ibm.etools.msg.importer.framework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2020-02-26 15:22:56.223
+!MESSAGE NLS unused message: GenMsgModel_WizardPage_MsgModelType_help in: com.ibm.etools.msg.importer.framework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2020-02-26 15:22:56.223
+!MESSAGE NLS unused message: GenMsgModel_WizardPage_CreationType_title in: com.ibm.etools.msg.importer.framework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2020-02-26 15:22:56.224
+!MESSAGE NLS unused message: GenMsgModel_WizardPage_CreationType_desc in: com.ibm.etools.msg.importer.framework.messages
+
+!ENTRY com.ibm.etools.msg.importer.cobol 1 1 2020-02-26 15:26:05.222
+!MESSAGE DFDLFromCobolOperation::readCobolFile
+!SUBENTRY 1 com.ibm.etools.msg.importer.cobol 1 0 2020-02-26 15:26:05.222
+!MESSAGE Compile Options : {com.ibm.etools.cobol.COBOL_PLATFORM_SELECTION=0, com.ibm.etools.cobol.COBOL_CODEPAGE=ISO-8859-1, com.ibm.etools.cobol.COBOL_QUOTE=DOUBLE, com.ibm.etools.cobol.COBOL_ENDIAN=Little, com.ibm.etools.cobol.COBOL_NUMPROC=PFD, com.ibm.etools.cobol.COBOL_NSYMBOL=NATIONAL, com.ibm.etools.cobol.COBOL_REMOTE_ENDIAN=Little, com.ibm.etools.cobol.COBOL_EXTENSION_COB=FP, com.ibm.etools.cobol.COBOL_EXT_DECIMAL_SIGN=ASCII, com.ibm.etools.cobol.COBOL_FLOATING_POINT_FORMAT=0, com.ibm.etools.cobol.COBOL_EXTENSION_CCP=FP, com.ibm.etools.cobol.COBOL_TRUNC=STD, com.ibm.etools.cobol.COBOL_EXTENSION_CBL=FP, com.ibm.etools.cobol.COBOL_EXTENSION_CPY=DS}
+
+!ENTRY com.ibm.etools.msg.importer.cobol 1 1 2020-02-26 15:27:29.495
+!MESSAGE DFDLFromCobolOperation::readCobolFile
+!SUBENTRY 1 com.ibm.etools.msg.importer.cobol 1 0 2020-02-26 15:27:29.495
+!MESSAGE Compile Options : {com.ibm.etools.cobol.COBOL_PLATFORM_SELECTION=0, com.ibm.etools.cobol.COBOL_CODEPAGE=ISO-8859-1, com.ibm.etools.cobol.COBOL_QUOTE=DOUBLE, com.ibm.etools.cobol.COBOL_ENDIAN=Little, com.ibm.etools.cobol.COBOL_NUMPROC=PFD, com.ibm.etools.cobol.COBOL_NSYMBOL=NATIONAL, com.ibm.etools.cobol.COBOL_REMOTE_ENDIAN=Little, com.ibm.etools.cobol.COBOL_EXTENSION_COB=FP, com.ibm.etools.cobol.COBOL_EXT_DECIMAL_SIGN=ASCII, com.ibm.etools.cobol.COBOL_FLOATING_POINT_FORMAT=0, com.ibm.etools.cobol.COBOL_EXTENSION_CCP=FP, com.ibm.etools.cobol.COBOL_TRUNC=STD, com.ibm.etools.cobol.COBOL_EXTENSION_CBL=FP, com.ibm.etools.cobol.COBOL_EXTENSION_CPY=DS}
+
+!ENTRY com.ibm.etools.msg.importer.cobol 1 0 2020-02-26 15:27:29.817
+!MESSAGE Non numeric fields found in Type Desctiptor -- Byte alignment will not be attempted
+
+!ENTRY com.ibm.etools.msg.importer.cobol 1 0 2020-02-26 15:27:29.820
+!MESSAGE populateMessageModel(), Message file = file:/C:/Workspace/DFDL/DFDLModels/PURCHASES-DISC.xsd
+
+!ENTRY org.eclipse.ui 4 4 2020-02-26 16:03:13.749
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2020-02-26 16:03:13.750
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2020-02-26 16:03:13.751
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2020-02-26 16:03:13.752
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2020-02-26 16:03:13.754
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2020-02-26 16:03:13.755
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2020-02-26 16:03:13.757
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2020-02-26 16:03:13.757
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2020-02-26 16:03:13.807
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2020-02-26 16:03:13.807
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies

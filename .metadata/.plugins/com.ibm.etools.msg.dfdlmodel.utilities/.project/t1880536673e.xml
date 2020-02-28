@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><MessageBroker name="Lab16Lib">
+  <XSDCollection href="platform:/resource/Lab16Lib/Lab16.xsd" prefix="" targetNamespace="http://Lab16">
+    <include name="/Lab16Lib/Lab16_InlineSchema2.xsd" targetNamespace="http://Lab16"/>
+  </XSDCollection>
+  <XSDCollection href="platform:/resource/Lab16Lib/Lab16_InlineSchema2.xsd" prefix="tns" targetNamespace="http://Lab16">
+    <include name="/Lab16Lib/Lab16_InlineSchema1.xsd" targetNamespace="http://Lab16"/>
+    <element href="platform:/resource/Lab16Lib/Lab16_InlineSchema2.xsd#//operation1;XSDElementDeclaration" name="operation1"/>
+    <element href="platform:/resource/Lab16Lib/Lab16_InlineSchema2.xsd#//operation1Response;XSDElementDeclaration=1" name="operation1Response"/>
+  </XSDCollection>
+</MessageBroker>

@@ -1,0 +1,19 @@
+/*EATE FUNCTION Main() RETURNS BOOLE*/
+	BEGIN
+		SET OutputRoot.Properties = InputRoot.Properties;
+		CREATE NEXTSIBLING OF OutputRoot.Properties DOMAIN 'MQMD';
+		SET OutputRoot.MQMD.Version = MQMD_CURRENT_VERSION;
+		CREATE LASTCHILD OF OutputRoot DOMAIN 'XMLNSC';
+		CREATE LASTCHILD OF OutputRoot.XMLNSC NAME 'ComIbmAggregateReplyBody';
+		DECLARE next INTEGER 1;
+		DECLARE repliesIn REFERENCE TO InputRoot.ComIbmAggregateReplyBody.*[next];
+		DECLARE repliesOut REFERENCE TO OutputRoot.XMLNSC.ComIbmAggregateReplyBody;
+		WHILE next <= 4 DO -- 4-way aggregation
+			CREATE LASTCHILD OF repliesOut NAME FIELDNAME(repliesIn);
+			SET repliesOut.*[next].ReplyIdentifier = CAST(repliesIn.Properties.ReplyIdentifier AS CHAR);
+			SET repliesOut.*[next].SaleEnvelope = repliesIn.XMLNSC.SaleEnvelope;
+			MOVE repliesIn NEXTSIBLING;
+			SET next = next + 1;
+		END WHILE;
+		RETURN TRUE;
+	END;

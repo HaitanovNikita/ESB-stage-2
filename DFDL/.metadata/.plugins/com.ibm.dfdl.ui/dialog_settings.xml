@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="com.ibm.dfdl.launching.testParse">
+		<item value="UTF-8" key="Encoding"/>
+		<item value="true" key="SerializerInputsFromFile"/>
+		<item value="false" key="RuntimeValidation"/>
+		<item value="ieee" key="BinaryFloarRep"/>
+		<item value="bigEndian" key="ByteOrder"/>
+		<item value="true" key="ParserInputsFromFile"/>
+		<list key="SerializerInputs">
+		</list>
+		<list key="ParserInputs">
+			<item value="C:\Users\nhaitanov\lab2\App Development II\labfiles\Lab02-DFDL\data\Companies.txt"/>
+			<item value="C:\Users\nhaitanov\lab2\App Development II\labfiles\Lab02-DFDL\discriminators\Purchases_disc_USA.dat"/>
+			<item value="C:\Users\nhaitanov\lab2\App Development II\labfiles\Lab02-DFDL\discriminators\Purchases_disc_France.dat"/>
+			<item value="C:\Users\nhaitanov\lab2\App Development II\labfiles\Lab02-DFDL\discriminators\Purchases_disc_UK.dat"/>
+			<item value="C:\Users\nhaitanov\lab2\App Development II\labfiles\Lab02-DFDL\discriminators\Purchases_disc_Russia.dat"/>
+		</list>
+	</section>
+</section>

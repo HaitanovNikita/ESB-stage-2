@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MessagePool xmlns="http://wwww.ibm.com/iib/test/1.0.0">
+    <MQInputMessage timestamp="1582557018641" nodeId="FCMComposite_1_1" name="new message 1" id="1582557018641-7">
+        <plainText>1%2CIvan%2CIvanov%2Civanov%40ya.ru%0D%0A2%2CPetr%2CPetrov%2Cpetrov%40ya.ru</plainText>
+        <MessageHeader backoutCount="0" characterSet="0" encoding="0" expiry="-1" feedback="0" messageFlags="0" messageType="8" messageSequenceNumber="1" offset="0" originalLength="-1" persistence="2" priority="-1" putApplicationType="0" report="0"/>
+    </MQInputMessage>
+    <MQInputMessage timestamp="1582634937054" nodeId="FCMComposite_1_1" name="new message 2" id="1582634937054-108">
+        <plainText>bla+bla</plainText>
+        <MessageHeader backoutCount="0" characterSet="0" encoding="0" expiry="-1" feedback="0" messageFlags="0" messageType="8" messageSequenceNumber="1" offset="0" originalLength="-1" persistence="2" priority="-1" putApplicationType="0" report="0"/>
+    </MQInputMessage>
+    <MQInputMessage timestamp="1582635011525" nodeId="FCMComposite_1_1" name="new message 3" id="1582635011525-205">
+        <plainText>bla+bla+2</plainText>
+        <MessageHeader backoutCount="0" characterSet="0" encoding="0" expiry="-1" feedback="0" messageFlags="0" messageType="8" messageSequenceNumber="1" offset="0" originalLength="-1" persistence="2" priority="-1" putApplicationType="0" report="0"/>
+    </MQInputMessage>
+</MessagePool>

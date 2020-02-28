@@ -1,0 +1,13 @@
+CREATE COMPUTE MODULE SecurityIdentitySubFlow_ClearHdrs
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		CALL CopyEntireMessage();
+        -- Clear the HTTP request headers from tree
+		SET OutputRoot.HTTPResponseHeader = NULL;
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;

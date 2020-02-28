@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:tns="http://training.ibm.com/Employee"
+            targetNamespace="http://training.ibm.com/Employee"
+            elementFormDefault="qualified" >
+  <xsd:complexType name="EmployeeType">
+    <xsd:sequence>
+      <xsd:element type="xsd:string" name="EmpNo" />
+      <xsd:element type="xsd:string" name="GivenName" />
+      <xsd:element type="xsd:string" name="Initial" />
+      <xsd:element type="xsd:string" name="FamilyName" />
+      <xsd:element type="xsd:string" name="Department" />
+      <xsd:element type="xsd:string" name="Phone" />
+      <xsd:element type="xsd:string" name="Role" />
+      <xsd:element type="xsd:string" name="HireDate" />
+      <xsd:element type="xsd:string" name="Salary" />
+      <xsd:element type="xsd:string" name="Bonus" />
+      <xsd:element type="xsd:string" name="Commission" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element type="tns:EmployeeType" name="Employee" />
+</xsd:schema>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ComIbmMQInput.msgnode="ComIbmMQInput.msgnode" xmlns:ComIbmMQOutput.msgnode="ComIbmMQOutput.msgnode" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:eflow="http://www.ibm.com/wbi/2005/eflow" xmlns:mbmonitor="http://www.ibm.com/wbi/2008/eflow_mbmonitor" xmlns:utility="http://www.ibm.com/wbi/2005/eflow_utility" nsURI="TRD3c_Guest_Trade.msgflow"
+    nsPrefix="TRD3c_Guest_Trade.msgflow">
+  <eClassifiers xmi:type="eflow:FCMComposite" name="FCMComposite_1">
+    <eSuperTypes href="http://www.ibm.com/wbi/2005/eflow#//FCMBlock"/>
+    <translation xmi:type="utility:TranslatableString" key="TRD3c_Guest_Trade" bundleName="TRD3c_Guest_Trade" pluginId="Trades"/>
+    <colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/Trades/icons/full/obj16/TRD3c_Guest_Trade.gif"/>
+    <colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/Trades/icons/full/obj30/TRD3c_Guest_Trade.gif"/>
+    <composition>
+      <nodes xmi:type="ComIbmMQInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="49,104" queueName="TRADE.GUEST.IN" messageDomainProperty="XMLNSC">
+        <translation xmi:type="utility:ConstantString" string="MQ Input"/>
+        <nsMappingTable nsPrefix="tra" namespace="http://www.ibm.com/TradeOrder"/>
+        <monitorEvents eventSourceDescription="Transaction start" eventSourceName="MQ Input.transaction.Start" eventIdentity="Guest: Start">
+          <eventXMLDoc xmi:type="mbmonitor:MonitorEvent">
+            <globalTransactionCorrelator dataLocation="$Root/XMLNSC/tra:tradeOrder/StockAmount" eventCorrelation="dataLocation">
+              <nsPrefixMap prefix="tra" nsURI="http://www.ibm.com/TradeOrder"/>
+            </globalTransactionCorrelator>
+            <parentTransactionCorrelator dataLocation="$Root/XMLNSC/tra:tradeOrder/tra:tradeOrderID" eventCorrelation="dataLocation">
+              <nsPrefixMap prefix="tra" nsURI="http://www.ibm.com/TradeOrder"/>
+            </parentTransactionCorrelator>
+            <localTransactionCorrelator dataLocation="$Root/XMLNSC/tra:tradeOrder/tra:customerID" eventCorrelation="dataLocation">
+              <nsPrefixMap prefix="tra" nsURI="http://www.ibm.com/TradeOrder"/>
+            </localTransactionCorrelator>
+            <bitStreamData encoding="none" bitstreamContent="none"/>
+            <eventName literal="Guest: Start"/>
+            <eventFilter dataLocation="true()" isXPath="true">
+              <nsPrefixMap prefix="tra" nsURI="http://www.ibm.com/TradeOrder"/>
+            </eventFilter>
+          </eventXMLDoc>
+        </monitorEvents>
+      </nodes>
+      <nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="235,104" queueName="TRADE.RECONCILIATION.IN">
+        <translation xmi:type="utility:ConstantString" string="Guest Done"/>
+      </nodes>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_1" targetNode="FCMComposite_1_2" sourceNode="FCMComposite_1_1" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+    </composition>
+    <propertyOrganizer/>
+    <stickyBoard/>
+  </eClassifiers>
+</ecore:EPackage>

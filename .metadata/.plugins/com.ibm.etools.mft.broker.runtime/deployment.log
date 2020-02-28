@@ -1,0 +1,65 @@
+firstApp>>TESTNODE_nhaitanov>>default>>2>>1582549819998
+2087<<Runtime Response<<2020-02-24 15:10:21.691 EET<<TESTNODE_nhaitanov<<15bc0e20-a0d9-4c54-befe-29b561233c93
+4041<<Runtime Response<<2020-02-24 15:10:21.691 EET<<default<<dee677bb-3250-4d7e-b6ba-59a86e4db7dd
+2683<<Runtime Response<<2020-02-24 15:10:21.691 EET<<PolicyManager
+2871<<Administration Result<<2020-02-24 15:10:21.691 EET<<IV\nhaitanov<<deploy<<C:/Users/nhaitanov/IBM/IIBT10/workspace/GeneratedBarFiles/firstAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<FAILED
+firstApp>>test1>>default>>0>>1582549928644
+2871<<Administration Result<<2020-02-24 15:12:10.089 EET<<IV\nhaitanov<<deploy<<C:/Users/nhaitanov/IBM/IIBT10/workspace/GeneratedBarFiles/firstAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+firstApp>>test1>>default>>0>>1582550160833
+2871<<Administration Result<<2020-02-24 15:16:01.663 EET<<IV\nhaitanov<<deploy<<C:/Users/nhaitanov/IBM/IIBT10/workspace/GeneratedBarFiles/firstAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+firstApp>>test1>>default>>0>>1582550234413
+2871<<Administration Result<<2020-02-24 15:17:15.568 EET<<IV\nhaitanov<<deploy<<C:/Users/nhaitanov/IBM/IIBT10/workspace/GeneratedBarFiles/firstAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+firstApp>>test1>>default>>0>>1582551685427
+2871<<Administration Result<<2020-02-24 15:41:25.931 EET<<IV\nhaitanov<<deploy<<C:/Users/nhaitanov/IBM/IIBT10/workspace/GeneratedBarFiles/firstAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+firstApp>>test1>>default>>0>>1582552324797
+2871<<Administration Result<<2020-02-24 15:52:05.062 EET<<IV\nhaitanov<<deploy<<C:/Users/nhaitanov/IBM/IIBT10/workspace/GeneratedBarFiles/firstAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+firstApp>>test1>>default>>0>>1582552650562
+2871<<Administration Result<<2020-02-24 15:57:30.990 EET<<IV\nhaitanov<<deploy<<C:/Users/nhaitanov/IBM/IIBT10/workspace/GeneratedBarFiles/firstAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+firstApp>>test1>>default>>0>>1582553234469
+2871<<Administration Result<<2020-02-24 16:07:15.379 EET<<IV\nhaitanov<<deploy<<C:/Users/nhaitanov/IBM/IIBT10/workspace/GeneratedBarFiles/firstAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+firstApp>>test1>>default>>0>>1582555525328
+2871<<Administration Result<<2020-02-24 16:45:30.112 EET<<IV\nhaitanov<<deploy<<C:/Users/nhaitanov/IBM/IIBT10/workspace/GeneratedBarFiles/firstAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+secondApp>>test1>>default>>0>>1582556991010
+2871<<Administration Result<<2020-02-24 17:09:54.397 EET<<IV\nhaitanov<<deploy<<C:/Users/nhaitanov/IBM/IIBT10/workspace/TestModeBarFiles/secondAppproject.TestMode.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+secondApp>>test1>>default>>0>>1582559447386
+2871<<Administration Result<<2020-02-24 17:50:53.826 EET<<IV\nhaitanov<<deploy<<C:/Users/nhaitanov/IBM/IIBT10/workspace/TestModeBarFiles/secondAppproject.TestMode.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+secondApp>>test1>>default>>0>>1582615261646
+2871<<Administration Result<<2020-02-25 09:21:04.171 EET<<IV\nhaitanov<<deploy<<C:/Users/nhaitanov/IBM/IIBT10/workspace/GeneratedBarFiles/secondAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+secondApp>>test1>>default>>0>>1582617319635
+2871<<Administration Result<<2020-02-25 09:55:21.833 EET<<IV\nhaitanov<<deploy<<C:/Users/nhaitanov/IBM/IIBT10/workspace/TestModeBarFiles/secondAppproject.TestMode.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+secondApp>>TESTNODE_nhaitanov>>default>>2>>1582623129968
+2087<<Runtime Response<<2020-02-25 11:32:19.524 EET<<TESTNODE_nhaitanov<<15bc0e20-a0d9-4c54-befe-29b561233c93
+4041<<Runtime Response<<2020-02-25 11:32:19.524 EET<<default<<dee677bb-3250-4d7e-b6ba-59a86e4db7dd
+2683<<Runtime Response<<2020-02-25 11:32:19.524 EET<<PolicyManager
+2871<<Administration Result<<2020-02-25 11:32:19.524 EET<<IV\nhaitanov<<deploy<<C:/Users/nhaitanov/IBM/IIBT10/workspace/GeneratedBarFiles/secondAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<FAILED
+secondApp>>Integration_Node>>default>>0>>1582623212966
+2871<<Administration Result<<2020-02-25 11:33:41.314 EET<<IV\nhaitanov<<deploy<<C:/Users/nhaitanov/IBM/IIBT10/workspace/GeneratedBarFiles/secondAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+secondApp>>Integration_Node>>default>>0>>1582627960293
+2871<<Administration Result<<2020-02-25 12:52:43.882 EET<<IV\nhaitanov<<deploy<<C:/Users/nhaitanov/IBM/IIBT10/workspace/TestModeBarFiles/secondAppproject.TestMode.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+secondApp>>Integration_Node>>default>>0>>1582628060436
+2871<<Administration Result<<2020-02-25 12:54:25.062 EET<<IV\nhaitanov<<deploy<<C:/Users/nhaitanov/IBM/IIBT10/workspace/GeneratedBarFiles/secondAppproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+Lab16>>Integration_Node>>default>>2>>1582637950629
+2087<<Runtime Response<<2020-02-25 15:39:11.078 EET<<Integration_Node<<35935e06-5177-4a11-a5e6-be637b3f955a
+4041<<Runtime Response<<2020-02-25 15:39:11.079 EET<<default<<323139c7-1944-4a0d-aa4d-f07358a196b2
+1301<<Runtime Response<<2020-02-25 15:39:11.079 EET<<Lab16<<Lab16Lib<<Lab16
+2871<<Administration Result<<2020-02-25 15:39:11.079 EET<<IV\nhaitanov<<deploy<<C:/Users/nhaitanov/IBM/IIBT10/workspace/GeneratedBarFiles/Lab16project.generated.bar<<BAR<<default<<ExecutionGroup<<FAILED
+Lab16Lib>>Integration_Node>>default>>0>>1582638034455
+2871<<Administration Result<<2020-02-25 15:40:35.258 EET<<IV\nhaitanov<<deploy<<C:/Users/nhaitanov/IBM/IIBT10/workspace/GeneratedBarFiles/Lab16Libproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+Lab16>>Integration_Node>>default>>0>>1582638040766
+2871<<Administration Result<<2020-02-25 15:40:42.886 EET<<IV\nhaitanov<<deploy<<C:/Users/nhaitanov/IBM/IIBT10/workspace/GeneratedBarFiles/Lab16project.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+fourth>>Integration_Node>>default>>2>>1582640478204
+2087<<Runtime Response<<2020-02-25 16:21:21.011 EET<<Integration_Node<<35935e06-5177-4a11-a5e6-be637b3f955a
+4041<<Runtime Response<<2020-02-25 16:21:21.011 EET<<default<<323139c7-1944-4a0d-aa4d-f07358a196b2
+3726<<Runtime Response<<2020-02-25 16:21:21.011 EET<<SOAP Input
+3838<<Runtime Response<<2020-02-25 16:21:21.011 EET<<Lab16HttpBinding<<Lab16.wsdl<<Lab16Lib<<http://Lab16
+2871<<Administration Result<<2020-02-25 16:21:21.013 EET<<IV\nhaitanov<<deploy<<C:/Users/nhaitanov/IBM/IIBT10/workspace/TestModeBarFiles/fourthproject.TestMode.bar<<BAR<<default<<ExecutionGroup<<FAILED
+fourth>>Integration_Node>>default>>0>>1582640558128
+2871<<Administration Result<<2020-02-25 16:22:38.662 EET<<IV\nhaitanov<<deploy<<C:/Users/nhaitanov/IBM/IIBT10/workspace/GeneratedBarFiles/fourthproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+fourth>>Integration_Node>>default>>2>>1582640913657
+2087<<Runtime Response<<2020-02-25 16:28:38.738 EET<<Integration_Node<<35935e06-5177-4a11-a5e6-be637b3f955a
+4041<<Runtime Response<<2020-02-25 16:28:38.738 EET<<default<<323139c7-1944-4a0d-aa4d-f07358a196b2
+3726<<Runtime Response<<2020-02-25 16:28:38.738 EET<<SOAP Input
+3838<<Runtime Response<<2020-02-25 16:28:38.738 EET<<Lab16HttpBinding<<Lab16.wsdl<<Lab16Lib<<http://Lab16
+2871<<Administration Result<<2020-02-25 16:28:38.738 EET<<IV\nhaitanov<<deploy<<C:/Users/nhaitanov/IBM/IIBT10/workspace/TestModeBarFiles/fourthproject.TestMode.bar<<BAR<<default<<ExecutionGroup<<FAILED
+fourth>>Integration_Node>>default>>0>>1582640928448
+2871<<Administration Result<<2020-02-25 16:28:49.083 EET<<IV\nhaitanov<<deploy<<C:/Users/nhaitanov/IBM/IIBT10/workspace/GeneratedBarFiles/fourthproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE

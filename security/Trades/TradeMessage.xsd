@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema targetNamespace="http://www.ibm.com/TradeOrder" xmlns:trade="http://www.ibm.com/TradeOrder" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="tradeStock" type="xsd:string"/>
+  <xsd:element name="tradeOrderID" type="xsd:string"/>
+  <xsd:element name="customerID" type="xsd:string"/>
+  <xsd:element name="tradeOrder">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="trade:tradeOrderID"/>
+        <xsd:element ref="trade:customerID"/>
+        <xsd:element ref="trade:tradeStock"/>
+        <xsd:element ref="trade:tradeAmount"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="tradeAmount" type="xsd:string"/>
+</xsd:schema>

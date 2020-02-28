@@ -1,0 +1,37 @@
+
+
+Importing file: C:\Users\nhaitanov\lab2\App Development II\labfiles\Lab02-DFDL\discriminators\PURCHASES-DISC.cpy
+
+Import options for COBOL: 
+		CODEPAGE=ISO-8859-1
+		ENDIAN=Little
+		EXTENSION_CBL=FP
+		EXTENSION_CCP=FP
+		EXTENSION_COB=FP
+		EXTENSION_CPY=DS
+		EXT_DECIMAL_SIGN=ASCII
+		FLOATING_POINT_FORMAT=0
+		NSYMBOL=NATIONAL
+		NUMPROC=PFD
+		PLATFORM_SELECTION=0
+		QUOTE=DOUBLE
+		REMOTE_ENDIAN=Little
+		TRUNC=STD
+		SCHEMA_TARGET_NAMESPACE_URI=null
+		CREATE_DEFAULT_VALUES_FROM_INITIAL_VALUES=true
+		CREATE_FACETS_FROM_LEVEL_88_VALUE_CLAUSES=false
+		PRESERVE_CASE_IN_VARIABLE_NAMES=true
+		CREATE_NULL_VALUES_FOR_FIELDS=false
+		NULL_CHARACTER_FOR_STRING=%SP; 
+		NULL_CHARACTER_FOR_NUMBER=%#r00; 
+		STRING_PADDING_CHARACTER=%SP;
+		NUMBER_PADDING_CHARACTER=%SP;
+		DEFAULT_FOR_STRING= 
+		DEFAULT_FOR_NUMBER=0
+
+Creating global element for COBOL structure "PURCHASES-DISC"
+Creating global element "PURCHASESDISC" from type "PURCHASESDISC"
+Creating message "PURCHASESDISC" from global element "PURCHASESDISC"
+Setting default value for elements of type String  " "
+Setting default value for elements of type String  " "
+Setting default value for elements of type Number  "0"

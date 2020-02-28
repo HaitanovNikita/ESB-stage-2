@@ -1,0 +1,14 @@
+<userlist>
+<user>
+<id>1</id>
+<firstname>Ivan</firstname>
+<lastname>Ivanov</lastname>
+<email>ivanov@ya.ru</email>
+</user>
+<user>
+<id>2</id>
+<firstname>Petr</firstname>
+<lastname>Petrov</lastname>
+<email>petrov@ya.ru</email>
+</user>
+</userlist>

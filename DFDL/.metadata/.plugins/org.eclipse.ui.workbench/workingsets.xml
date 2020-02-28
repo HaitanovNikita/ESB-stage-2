@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="com.ibm.etools.mft.navigator.BrokerWorkingSet.AppLib" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1582720169582_2" label="[DFDLModels]" name="[DFDLModels]">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/DFDLModels" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1582720039874_0" label="Window Working Set" name="Aggregate for window 1582720039874"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1582720076757_1" label="Window Working Set" name="Aggregate for window 1582720076757"/>
+</workingSetManager>

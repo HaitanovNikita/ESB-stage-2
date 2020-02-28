@@ -1,0 +1,11 @@
+CREATE PROCEDURE CopyMessageHeaders(IN input REFERENCE,
+									IN output REFERENCE)
+BEGIN
+	DECLARE I INTEGER 2;
+	DECLARE J INTEGER CARDINALITY(input.*[]);
+	WHILE I < J DO
+		CREATE LASTCHILD OF output DOMAIN FIELDNAME(input.*[I]);
+		SET output.*[I] = input.*[I];
+		SET I = I + 1;
+	END WHILE;
+END;
